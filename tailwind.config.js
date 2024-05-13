@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors')
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
@@ -22,6 +23,9 @@ module.exports = {
         },
         dimWhite: "rgba(255, 255, 255, 0.7)",
         dimBlue: "rgba(9, 151, 124, 0.1)",
+        yellow: colors.yellow,
+        emerald: colors.emerald,
+        black: colors.black,
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
