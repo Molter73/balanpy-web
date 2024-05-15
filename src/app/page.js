@@ -26,7 +26,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={`bg-balanpy ${styles.paddingX} ${styles.flexStart}`}>
+      <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
         <div className={styles.boxWidth}>
           <Stats />
         </div>
