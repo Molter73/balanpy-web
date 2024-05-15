@@ -7,7 +7,7 @@ export default function Clients() {
       <h2 className={`${styles.heading2} ${styles.paddingX} text-black mb-6`}>
         Servicios
       </h2>
-      <div className="w-1/12 h-[3px] bg-black mb-6"></div>
+      <div className="w-1/12 h-[5px] bg-black mb-6"></div>
       <p
         className={`${styles.paragraph} ${styles.paddingX} text-black mb-10 max-w-[800px]`}
       >

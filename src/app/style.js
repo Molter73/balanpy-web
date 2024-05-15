@@ -13,7 +13,7 @@ export const styles = {
   heading4:
     "font-poppins font-semibold xs:text-[20px] text-[40px] text-black xs:leading-[24px] leading-[70px] w-full",
 
-  paragraph: "font-poppins font-medium text-black text-[18px] leading-[32px]",
+  paragraph: "font-poppins font-medium text-black text-[18px] leading-[28px]",
 
   flexCenter: "flex justify-center items-center",
   flexStart: "flex justify-center items-start",

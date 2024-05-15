@@ -34,29 +34,7 @@ export const navLinks = [
   },
 ];
 
-export const features = [
-  {
-    id: "feature-1",
-    icon: star,
-    title: "Rewards",
-    content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
-  },
-  {
-    id: "feature-2",
-    icon: shield,
-    title: "100% Secured",
-    content:
-      "We take proactive steps make sure your information and transactions are secure.",
-  },
-  {
-    id: "feature-3",
-    icon: send,
-    title: "Balance Transfer",
-    content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
-  },
-];
+
 
 export const feedback = [
   {
@@ -280,5 +258,29 @@ export const services = [
     title: "Agenda tu Cita con el Veterinario",
     content:
       "De forma muy simple, podrás agendar tu próxima cita en el veterinario más cercano.",
+  },
+];
+
+export const features = [
+  {
+    id: "features-1",
+    icon: "game.png",
+    title: "Interfaz Interactiva",
+    content:
+      "Nuestra interfaz está basada en un videojuego para facilitar la interactuación con la misma",
+  },
+  {
+    id: "features-2",
+    icon: "app-store.png",
+    title: "Tienda de Aplicaciones",
+    content:
+      "Podrás descargar nuestra aplicación para poder supervisar la salud de la mascota en cualquier momento.",
+  },
+  {
+    id: "features-3",
+    icon: "24horas.png",
+    title: "Atención 24/7",
+    content:
+      "Nuestra atención al cliente 24 horas te ayudará a resolver cualquiera de las dudas que te surja durante el proceso.",
   },
 ];

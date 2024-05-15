@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import Stats from "@/components/Stats";
 import Clients from "@/components/Clients";
 import Services from "@/components/Services";
+import WhyUs from "@/components/WhyUs";
 import {styles} from "./style";
 export default function Home() {
   return (
@@ -44,6 +45,14 @@ export default function Home() {
       >
         <div className={styles.boxWidth}>
           <Services />
+        </div>
+      </div>
+
+      <div
+        className={`bg-primary ${styles.paddingX} ${styles.paddingY} ${styles.flexStart}`}
+      >
+        <div className={styles.boxWidth}>
+          <WhyUs />
         </div>
       </div>
     </div>
