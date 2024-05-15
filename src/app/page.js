@@ -3,6 +3,7 @@ import Topbar from "../components/Topbar";
 import Hero from "@/components/Hero";
 import Stats from "@/components/Stats";
 import Clients from "@/components/Clients";
+import Services from "@/components/Services";
 import {styles} from "./style";
 export default function Home() {
   return (
@@ -30,14 +31,20 @@ export default function Home() {
           <Stats />
         </div>
       </div>
+
       <div className={`bg-clients-gradient`}>
         <div className={styles.boxWidth}>
           <Clients />
         </div>
-        <img
-          src="curvas-fondo.svg"
-          className="w-full object-cover relative"
-        />
+        <img src="curvas-fondo.png" className="w-full object-cover relative" />
+      </div>
+
+      <div
+        className={`bg-white ${styles.paddingX} ${styles.paddingY} ${styles.flexStart}`}
+      >
+        <div className={styles.boxWidth}>
+          <Services />
+        </div>
       </div>
     </div>
   );

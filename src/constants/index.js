@@ -258,3 +258,27 @@ export const clients = [
     logo: "logo-veterinario-16.png",
   },
 ];
+
+export const services = [
+  {
+    id: "services-1",
+    icon: "pets.png",
+    title: "Supervisamos a tu Mascota",
+    content:
+      "De forma interactiva, podrás supervisar muy fácilmente la salud de tu mascota.",
+  },
+  {
+    id: "services-2",
+    icon: "carne.png",
+    title: "Vigila su Alimentación",
+    content:
+      "Podrás vigilar el número de comidas y los cambios de peso que haya sufrido tu mascota.",
+  },
+  {
+    id: "services-3",
+    icon: "calendar.png",
+    title: "Agenda tu Cita con el Veterinario",
+    content:
+      "De forma muy simple, podrás agendar tu próxima cita en el veterinario más cercano.",
+  },
+];

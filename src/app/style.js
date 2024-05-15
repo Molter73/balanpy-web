@@ -11,7 +11,7 @@ export const styles = {
     "font-poppins font-semibold xs:text-[44px] text-[32px] text-black xs:leading-[50px] leading-[42px] w-full",
 
   heading4:
-    "font-poppins font-semibold xs:text-[28px] text-[24px] text-black xs:leading-[36px] leading-[28px] w-full",
+    "font-poppins font-semibold xs:text-[20px] text-[40px] text-black xs:leading-[24px] leading-[70px] w-full",
 
   paragraph: "font-poppins font-medium text-black text-[18px] leading-[32px]",
 
