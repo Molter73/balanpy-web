@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import Topbar from "../components/Topbar";
 import Hero from "@/components/Hero";
 import Stats from "@/components/Stats";
+import Clients from "@/components/Clients";
 import {styles} from "./style";
 export default function Home() {
   return (
@@ -25,10 +26,17 @@ export default function Home() {
       </div>
 
       <div
-        className={`bg-balanpy-gradient ${styles.paddingX} ${styles.flexStart}`}
+        className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}
       >
         <div className={styles.boxWidth}>
           <Stats />
+        </div>
+      </div>
+      <div
+        className={`bg-clients-gradient ${styles.paddingX} ${styles.flexStart}`}
+      >
+        <div className={styles.boxWidth}>
+          <Clients />
         </div>
       </div>
     </div>

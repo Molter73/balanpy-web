@@ -5,7 +5,7 @@ export const styles = {
     "font-poppins font-bold xs:text-[80px] text-[52px] text-balanpy xs:leading-[76.8px] leading-[66.8px] w-full",
 
   heading2:
-    "font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[60px] leading-[52px] w-full",
+    "font-poppins font-semibold xs:text-[48px] text-[40px] xs:leading-[60px] leading-[52px] w-full",
 
   heading3:
     "font-poppins font-semibold xs:text-[36px] text-[32px] text-black xs:leading-[50px] leading-[42px] w-full",

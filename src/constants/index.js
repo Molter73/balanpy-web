@@ -195,18 +195,66 @@ export const socialMedia = [
 export const clients = [
   {
     id: "client-1",
-    logo: airbnb,
+    logo: "logo-veterinario-1.png",
   },
   {
     id: "client-2",
-    logo: binance,
+    logo: "logo-veterinario-2.png",
   },
   {
     id: "client-3",
-    logo: coinbase,
+    logo: "logo-veterinario-3.png",
   },
   {
     id: "client-4",
-    logo: dropbox,
+    logo: "logo-veterinario-4.png",
+  },
+  {
+    id: "client-5",
+    logo: "logo-veterinario-5.png",
+  },
+  {
+    id: "client-6",
+    logo: "logo-veterinario-6.png",
+  },
+  {
+    id: "client-7",
+    logo: "logo-veterinario-7.png",
+  },
+  {
+    id: "client-8",
+    logo: "logo-veterinario-8.png",
+  },
+  {
+    id: "client-9",
+    logo: "logo-veterinario-9.png",
+  },
+  {
+    id: "client-10",
+    logo: "logo-veterinario-10.png",
+  },
+  {
+    id: "client-11",
+    logo: "logo-veterinario-11.png",
+  },
+  {
+    id: "client-12",
+    logo: "logo-veterinario-12.png",
+  },
+  {
+    id: "client-13",
+    logo: "logo-veterinario-13.png",
+  },
+  {
+    id: "client-14",
+    logo: "logo-veterinario-14.png",
+  },
+  {
+    id: "client-15",
+    logo: "logo-veterinario-15.png",
+  },
+  {
+    id: "client-16",
+    logo: "logo-veterinario-16.png",
   },
 ];
