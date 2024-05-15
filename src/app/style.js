@@ -1,10 +1,19 @@
 export const styles = {
   boxWidth: "xl:max-w-[1280px] w-full",
 
+  heading1:
+    "font-poppins font-bold xs:text-[80px] text-[52px] text-balanpy xs:leading-[76.8px] leading-[66.8px] w-full",
+
   heading2:
-    "font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[76.8px] leading-[66.8px] w-full",
-  paragraph:
-    "font-poppins font-normal text-dimWhite text-[18px] leading-[30.8px]",
+    "font-poppins font-semibold xs:text-[48px] text-[40px] text-white xs:leading-[60px] leading-[52px] w-full",
+
+  heading3:
+    "font-poppins font-semibold xs:text-[36px] text-[32px] text-black xs:leading-[50px] leading-[42px] w-full",
+
+  heading4:
+    "font-poppins font-semibold xs:text-[28px] text-[24px] text-black xs:leading-[36px] leading-[28px] w-full",
+
+  paragraph: "font-poppins font-medium text-black text-[18px] leading-[32px]",
 
   flexCenter: "flex justify-center items-center",
   flexStart: "flex justify-center items-start",

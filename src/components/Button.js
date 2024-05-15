@@ -21,5 +21,3 @@ export const ButtonSecondary = ({ styles, text }) => {
     text
   );
 };
-
-export default ButtonPrimary;
