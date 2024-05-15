@@ -5,10 +5,10 @@ export const styles = {
     "font-poppins font-bold xs:text-[80px] text-[52px] text-balanpy xs:leading-[76.8px] leading-[66.8px] w-full",
 
   heading2:
-    "font-poppins font-semibold xs:text-[48px] text-[40px] xs:leading-[60px] leading-[52px] w-full",
+    "font-poppins font-semibold xs:text-[62px] text-[70px] xs:leading-[60px] leading-[52px] w-full",
 
   heading3:
-    "font-poppins font-semibold xs:text-[36px] text-[32px] text-black xs:leading-[50px] leading-[42px] w-full",
+    "font-poppins font-semibold xs:text-[44px] text-[32px] text-black xs:leading-[50px] leading-[42px] w-full",
 
   heading4:
     "font-poppins font-semibold xs:text-[28px] text-[24px] text-black xs:leading-[36px] leading-[28px] w-full",

@@ -25,19 +25,19 @@ export default function Home() {
         </div>
       </div>
 
-      <div
-        className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}
-      >
+      <div className={`bg-balanpy ${styles.paddingX} ${styles.flexStart}`}>
         <div className={styles.boxWidth}>
           <Stats />
         </div>
       </div>
-      <div
-        className={`bg-clients-gradient ${styles.paddingX} ${styles.flexStart}`}
-      >
+      <div className={`bg-clients-gradient`}>
         <div className={styles.boxWidth}>
           <Clients />
         </div>
+        <img
+          src="curvas-fondo.svg"
+          className="w-full object-cover relative"
+        />
       </div>
     </div>
   );

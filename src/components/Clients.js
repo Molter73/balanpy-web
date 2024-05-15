@@ -3,9 +3,7 @@ import { clients } from "@/constants";
 
 export default function Clients() {
     return (
-      <section
-        className={`${styles.paddingY} text-center flex flex-col items-center py-10`}
-      >
+      <section className={`text-center flex flex-col items-center pb-20 `}>
         <h2
           className={`${styles.heading2} ${styles.paddingX} text-white mb-10`}
         >
@@ -15,7 +13,7 @@ export default function Clients() {
           {clients.map((client) => (
             <div
               key={client.id}
-              className="flex justify-center items-center w-32 h-16 bg-white rounded-full shadow-md p-2 hover:shadow-xl transition-all duration-300 ease-in-out"
+              className="flex justify-center items-center w-32 h-16 bg-white rounded-full shadow-md p-2 hover:shadow-2xl transition-all duration-300 ease-in-out hover:border-4 border-black box-border"
             >
               <img
                 src={client.logo}
