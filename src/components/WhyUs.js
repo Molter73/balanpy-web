@@ -3,7 +3,7 @@ import { features } from "@/constants";
 
 export default function Clients() {
   return (
-    <section className={`flex flex-col items-center pb-20 text-center`}>
+    <section id="whyus" className={`flex flex-col items-center pb-20 text-center`}>
       <h2
         className={`${styles.heading2} ${styles.paddingX} text-balanpy mb-10`}
       >

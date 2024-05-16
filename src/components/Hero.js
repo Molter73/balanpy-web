@@ -7,9 +7,7 @@ export default function Hero() {
         id="home"
         className={`flex md:flex-row flex-col ${styles.paddingY} `}
       >
-        <div
-          className={`flex-1 flex-col xl:px-0 sm:px-16 px-6`}
-        >
+        <div className={`flex-1 flex-col xl:px-0 sm:px-16 px-6`}>
           <div className="flex flex-row items-center `y-[6px] px-4 mb-2">
             <h3 className={styles.heading4}>Bienvenido a</h3>
           </div>
@@ -28,8 +26,16 @@ export default function Hero() {
             </p>
           </div>
           <div className="mt-5">
-            <ButtonPrimary styles={"ml-4"} text={"¡Regístrate ahora!"} />
-            <ButtonSecondary styles={"ml-5"} text={"Contáctanos"} />
+            <ButtonPrimary
+              styles={"ml-4"}
+              text={"¡Regístrate ahora!"}
+              href="/register"
+            />
+            <ButtonSecondary
+              styles={"ml-5"}
+              text={"Contáctanos"}
+              href="/contact"
+            />
           </div>
         </div>
         <div

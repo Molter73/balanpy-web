@@ -3,7 +3,7 @@ import { services } from "@/constants";
 
 export default function Clients() {
   return (
-    <section className={`text-center flex flex-col items-center pb-20 `}>
+    <section id="services" className={`text-center flex flex-col items-center pb-20 `}>
       <h2 className={`${styles.heading2} ${styles.paddingX} text-black mb-6`}>
         Servicios
       </h2>

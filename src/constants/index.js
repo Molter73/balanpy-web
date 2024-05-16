@@ -96,23 +96,23 @@ export const footerLinks = [
     links: [
       {
         name: "Estadísticas",
-        link: "https://www.balanpy.com/stats/",
+        link: "https://www.balanpy.com/#stats/",
       },
       {
         name: "Clientes",
-        link: "https://www.balanpy.com/clients/",
+        link: "https://www.balanpy.com/#clients/",
       },
       {
         name: "Servicios",
-        link: "https://www.balanpy.com/services/",
+        link: "https://www.balanpy.com/#services/",
       },
       {
         name: "¿Por qué elegirnos?",
-        link: "https://www.balanpy.com/why-us/",
+        link: "https://www.balanpy.com/#whyus/",
       },
       {
         name: "Testimonios",
-        link: "https://www.balanpy.com/testimonials/",
+        link: "https://www.balanpy.com/#testimonials/",
       },
     ],
   },

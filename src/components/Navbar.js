@@ -16,7 +16,7 @@ export default function Navbar() {
           <li
             key={nav.id}
             className={`font-poppins
-            font-normal cursor-pointer text-[16px] hover:text-balanpy ${
+            font-medium cursor-pointer text-[18px] hover:text-balanpy ${
               index === navLinks.length - 1 ? "mr-0" : "mr-10"
             } text-black`}
           >
@@ -24,8 +24,8 @@ export default function Navbar() {
           </li>
         ))}
       </ul>
-      <ButtonPrimary styles={"ml-10"} text={"Iniciar Sesión"} />
-      <ButtonSecondary styles={"ml-5"} text={"Registrarse"} />
+      <ButtonPrimary styles={"ml-10"} text={"Iniciar Sesión"} href="/login" />
+      <ButtonSecondary styles={"ml-5"} text={"Registrarse"} href="/register" />
     </nav>
   );
 }

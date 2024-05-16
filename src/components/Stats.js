@@ -4,6 +4,7 @@ import { stats } from "@/constants";
 export default function Stats() {
     return (
       <section
+        id="stats"
         className={`${styles.flexCenter} flex-row flex-wrap sm:mb-10 mb-4 xl:px-0 sm:px-16 px-6`}
       >
         {stats.map((stats) => (
