@@ -4,8 +4,6 @@ import { navLinks } from "../constants";
 import { ButtonPrimary, ButtonSecondary } from "./Button";
 
 export default function Navbar() {
-  const [toggle, setToggle] = useState(false);
-
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
       <img

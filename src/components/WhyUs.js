@@ -1,5 +1,5 @@
 import styles from "@/app/style";
-import { features, services } from "@/constants";
+import { features } from "@/constants";
 
 export default function Clients() {
   return (

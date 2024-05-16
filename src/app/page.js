@@ -5,6 +5,8 @@ import Stats from "@/components/Stats";
 import Clients from "@/components/Clients";
 import Services from "@/components/Services";
 import WhyUs from "@/components/WhyUs";
+import Testimonials from "@/components/Testimonials";
+import Footer from "@/components/Footer";
 import {styles} from "./style";
 export default function Home() {
   return (
@@ -53,6 +55,20 @@ export default function Home() {
       >
         <div className={styles.boxWidth}>
           <WhyUs />
+        </div>
+      </div>
+      <div
+        className={`bg-white ${styles.paddingX} ${styles.paddingY} ${styles.flexStart}`}
+      >
+        <div className={styles.boxWidth}>
+          <Testimonials />
+        </div>
+      </div>
+      <div
+        className={`bg-[#0D6C5F] ${styles.paddingX} ${styles.paddingY} ${styles.flexStart}`}
+      >
+        <div className={styles.boxWidth}>
+          <Footer />
         </div>
       </div>
     </div>

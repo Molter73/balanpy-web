@@ -1,19 +1,3 @@
-import {
-  people01,
-  people02,
-  people03,
-  facebook,
-  instagram,
-  linkedin,
-  twitter,
-  airbnb,
-  binance,
-  coinbase,
-  dropbox,
-  send,
-  shield,
-  star,
-} from "../../public";
 
 export const navLinks = [
   {
@@ -21,16 +5,20 @@ export const navLinks = [
     title: "Home",
   },
   {
-    id: "mascotas",
-    title: "Mascotas",
+    id: "clients",
+    title: "Clientes",
   },
   {
-    id: "veterinarios",
-    title: "Veterinarios",
+    id: "services",
+    title: "Servicios",
   },
   {
-    id: "contacto",
-    title: "Contacto",
+    id: "whyus",
+    title: "¿Por qué Elegirnos?",
+  },
+  {
+    id: "testimonials",
+    title: "Testimonios",
   },
 ];
 
@@ -40,26 +28,26 @@ export const feedback = [
   {
     id: "feedback-1",
     content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
-    name: "Herman Jensen",
-    title: "Founder & Leader",
-    img: people01,
+      "Balanpy ha revolucionado la forma en que cuido a mi perro. Las herramientas de monitoreo son increíblemente fáciles de usar y brindan tranquilidad.",
+    name: "Maria Rodriguez",
+    title: "Propietaria de Max",
+    img: "people01.png",
   },
   {
     id: "feedback-2",
     content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
-    name: "Steve Mark",
-    title: "Founder & Leader",
-    img: people02,
+      "Gracias a Balanpy, puedo mantener un control sobre la salud y las necesidades dietéticas de mi gato sin esfuerzo. Es imprescindible para cualquier dueño de mascotas.",
+    name: "Carlos Perez",
+    title: "Propietario de Mishi",
+    img: "people02.png",
   },
   {
     id: "feedback-3",
     content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
-    name: "Kenn Gallagher",
-    title: "Founder & Leader",
-    img: people03,
+      "La capacidad de programar citas con el veterinario y recibir recordatorios para las vacunas de mis mascotas ha sido un cambio radical. ¡Recomiendo Balanpy encarecidamente!",
+    name: "Mario Casas",
+    title: "Propietario de Toby y Luna",
+    img: "people03.png",
   },
 ];
 
@@ -83,65 +71,61 @@ export const stats = [
 
 export const footerLinks = [
   {
-    title: "Useful Links",
+    title: "Menú Rápido",
     links: [
       {
-        name: "Content",
-        link: "https://www.hoobank.com/content/",
+        name: "Home",
+        link: "https://www.balanpy.com/",
       },
       {
-        name: "How it Works",
-        link: "https://www.hoobank.com/how-it-works/",
+        name: "Iniciar Sesión",
+        link: "https://www.balanpy.com/login/",
       },
       {
-        name: "Create",
-        link: "https://www.hoobank.com/create/",
+        name: "Regístrate",
+        link: "https://www.balanpy.com/register/",
       },
       {
-        name: "Explore",
-        link: "https://www.hoobank.com/explore/",
-      },
-      {
-        name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
+        name: "Contáctanos",
+        link: "https://www.balanpy.com/contact/",
       },
     ],
   },
   {
-    title: "Community",
+    title: "Destacados",
     links: [
       {
-        name: "Help Center",
-        link: "https://www.hoobank.com/help-center/",
+        name: "Estadísticas",
+        link: "https://www.balanpy.com/stats/",
       },
       {
-        name: "Partners",
-        link: "https://www.hoobank.com/partners/",
+        name: "Clientes",
+        link: "https://www.balanpy.com/clients/",
       },
       {
-        name: "Suggestions",
-        link: "https://www.hoobank.com/suggestions/",
+        name: "Servicios",
+        link: "https://www.balanpy.com/services/",
       },
       {
-        name: "Blog",
-        link: "https://www.hoobank.com/blog/",
+        name: "¿Por qué elegirnos?",
+        link: "https://www.balanpy.com/why-us/",
       },
       {
-        name: "Newsletters",
-        link: "https://www.hoobank.com/newsletters/",
+        name: "Testimonios",
+        link: "https://www.balanpy.com/testimonials/",
       },
     ],
   },
   {
-    title: "Partner",
+    title: "Patrocinadores",
     links: [
       {
-        name: "Our Partner",
-        link: "https://www.hoobank.com/our-partner/",
+        name: "Nuestros patrocinadores",
+        link: "https://www.balanpy.com/sponsors/",
       },
       {
-        name: "Become a Partner",
-        link: "https://www.hoobank.com/become-a-partner/",
+        name: "Trabaja con Nosotros",
+        link: "https://www.balanpy.com/jobs/",
       },
     ],
   },
