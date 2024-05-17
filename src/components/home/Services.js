@@ -20,7 +20,7 @@ export default function Clients() {
         {services.map((services) => (
           <div
             key={services.id}
-            className="bg-balanpy text-white p-6 pt-10 pb-10 rounded-lg shadow-lg w-full md:w-1/4 lg:w-1/4 hover:shadow-2xl hover:scale-105 hover:bg-[#0D6C5F] transition-all duration-300 ease-in-out"
+            className="bg-balanpy text-white p-6 pt-10 pb-10 rounded-lg shadow-lg w-full md:w-1/4 lg:w-1/4 hover:shadow-2xl hover:scale-105 hover:bg-balanpy-900 transition-all duration-300 ease-in-out"
           >
             <img
               src={services.icon}

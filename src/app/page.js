@@ -65,7 +65,7 @@ export default function Home() {
         </div>
       </div>
       <div
-        className={`bg-[#0D6C5F] ${styles.paddingX} ${styles.paddingY} ${styles.flexStart}`}
+        className={`bg-balanpy-900 ${styles.paddingX} ${styles.paddingY} ${styles.flexStart}`}
       >
         <div className={styles.boxWidth}>
           <Footer />

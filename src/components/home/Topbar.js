@@ -6,7 +6,7 @@ export default function Topbar() {
         <div className="flex items-center space-x-4">
           <div className="flex items-center space-x-2 cursor-pointer">
             <img
-              src="phone.svg"
+              src="home/phone.svg"
               alt="phone"
               className="w-[16px] h-[16px] object-contain"
             />
@@ -16,7 +16,7 @@ export default function Topbar() {
           </div>
           <div className="flex items-center space-x-2 cursor-pointer">
             <img
-              src="mail.svg"
+              src="home/mail.svg"
               alt="email"
               className="w-[16px] h-[16px] object-contain"
             />

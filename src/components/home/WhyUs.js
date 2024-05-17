@@ -22,7 +22,7 @@ export default function Clients() {
           {features.map((features) => (
             <div
               key={features.id}
-              className="bg-balanpy text-white p-6 rounded-lg shadow-md flex items-center hover:shadow-2xl hover:scale-105 hover:bg-[#0D6C5F] transition-all duration-300 ease-in-out"
+              className="bg-balanpy text-white p-6 rounded-lg shadow-md flex items-center hover:shadow-2xl hover:scale-105 hover:bg-balanpy-900 transition-all duration-300 ease-in-out"
             >
               <img
                 src={features.icon}

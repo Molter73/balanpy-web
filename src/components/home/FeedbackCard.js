@@ -2,7 +2,7 @@ import styles from "@/app/style";
 
 export default function Testimonials({content, name, title, img }) {
     return (
-      <div className="flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 last:mr-0 my-5 bg-balanpy hover:shadow-2xl hover:scale-105 hover:bg-[#0D6C5F] transition-all duration-300 ease-in-out">
+      <div className="flex justify-between flex-col px-10 py-12 rounded-[20px] max-w-[370px] md:mr-10 sm:mr-5 mr-0 last:mr-0 my-5 bg-balanpy hover:shadow-2xl hover:scale-105 hover:bg-balanpy-900 transition-all duration-300 ease-in-out">
         <img
           src="home/quotes.svg"
           alt="double_quotes"
