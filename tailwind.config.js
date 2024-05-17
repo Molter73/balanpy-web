@@ -11,6 +11,18 @@ module.exports = {
         dimWhite: "rgba(255, 255, 255, 0.7)",
         dimBlue: "rgba(9, 151, 124, 0.1)",
       },
+      balanpy: {
+        50: "#EAF8F6",
+        100: "#D5F4F0",
+        200: "#C6EBE6",
+        300: "#B1E5DE",
+        400: "#9FE2D9",
+        500: "#87D5CA",
+        600: "#70CABD",
+        700: "#48BAAA",
+        800: "#279D8D",
+        900: "#0D6C5F",
+      },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },

@@ -1,5 +1,5 @@
 import styles from "@/app/style"
-import FeedbackCard from "@/components/FeedbackCard"
+import FeedbackCard from "@/components/home/FeedbackCard"
 import { feedback } from "@/constants";
 
 export default function Testimonials() {

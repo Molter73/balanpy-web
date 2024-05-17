@@ -1,12 +1,12 @@
-import Navbar from "../components/Navbar";
-import Topbar from "../components/Topbar";
-import Hero from "@/components/Hero";
-import Stats from "@/components/Stats";
-import Clients from "@/components/Clients";
-import Services from "@/components/Services";
-import WhyUs from "@/components/WhyUs";
-import Testimonials from "@/components/Testimonials";
-import Footer from "@/components/Footer";
+import Navbar from "../components/home/Navbar";
+import Topbar from "../components/home/Topbar";
+import Hero from "@/components/home/Hero";
+import Stats from "@/components/home/Stats";
+import Clients from "@/components/home/Clients";
+import Services from "@/components/home/Services";
+import WhyUs from "@/components/home/WhyUs";
+import Testimonials from "@/components/home/Testimonials";
+import Footer from "@/components/home/Footer";
 import {styles} from "./style";
 export default function Home() {
   return (

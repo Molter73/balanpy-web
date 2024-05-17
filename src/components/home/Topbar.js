@@ -1,4 +1,4 @@
-import { socialMedia } from "../constants";
+import { socialMedia } from "../../constants";
 
 export default function Topbar() {
     return (

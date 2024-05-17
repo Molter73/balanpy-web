@@ -1,4 +1,4 @@
-import { styles } from "../app/style";
+import { styles } from "../../app/style";
 import { ButtonPrimary, ButtonSecondary } from "./Button";
 
 export default function Hero() {
@@ -20,6 +20,7 @@ export default function Hero() {
               tus mascotas en una experiencia interactiva y visual. Aquí
               encontrarás herramientas fáciles de usar para el seguimiento de su
               salud y bienestar.
+              <br />
               <br /> Únete a Balanpy y haz que cuidar a tus mascotas sea más
               eficiente y divertido. ¡Empieza a disfrutar de un mundo de cuidado
               innovador para tus amigos de cuatro patas!
