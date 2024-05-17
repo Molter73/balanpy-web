@@ -13,7 +13,7 @@ export default function Clients() {
       <div className="flex flex-wrap justify-center items-center gap-6 max-w-5xl mt-16">
         <div className="w-full lg:w-1/3 flex justify-center">
           <img
-            src="carlino.png"
+            src="home/carlino.png"
             alt="Carlino"
             className="rounded-lg shadow-md max-w-full h-auto"
           />

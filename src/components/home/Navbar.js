@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
       <img
-        src="/logo-balanpy.png"
+        src="home/logo-balanpy.png"
         alt="balanpy"
         className="w-[200px] h-[50px]"
       />

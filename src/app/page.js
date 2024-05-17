@@ -39,7 +39,7 @@ export default function Home() {
         <div className={styles.boxWidth}>
           <Clients />
         </div>
-        <img src="curvas-fondo.png" className="w-full object-cover relative" />
+        <img src="home/curvas-fondo.png" className="w-full object-cover relative" />
       </div>
 
       <div

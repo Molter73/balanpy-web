@@ -31,7 +31,7 @@ export const feedback = [
       "Balanpy ha revolucionado la forma en que cuido a mi perro. Las herramientas de monitoreo son increíblemente fáciles de usar y brindan tranquilidad.",
     name: "Maria Rodriguez",
     title: "Propietaria de Max",
-    img: "people01.png",
+    img: "home/people01.png",
   },
   {
     id: "feedback-2",
@@ -39,7 +39,7 @@ export const feedback = [
       "Gracias a Balanpy, puedo mantener un control sobre la salud y las necesidades dietéticas de mi gato sin esfuerzo. Es imprescindible para cualquier dueño de mascotas.",
     name: "Carlos Perez",
     title: "Propietario de Mishi",
-    img: "people02.png",
+    img: "home/people02.png",
   },
   {
     id: "feedback-3",
@@ -47,7 +47,7 @@ export const feedback = [
       "La capacidad de programar citas con el veterinario y recibir recordatorios para las vacunas de mis mascotas ha sido un cambio radical. ¡Recomiendo Balanpy encarecidamente!",
     name: "Mario Casas",
     title: "Propietario de Toby y Luna",
-    img: "people03.png",
+    img: "home/people03.png",
   },
 ];
 
@@ -134,22 +134,22 @@ export const footerLinks = [
 export const socialMedia = [
   {
     id: "social-media-1",
-    icon: "instagram.svg",
+    icon: "home/instagram.svg",
     link: "https://www.instagram.com/",
   },
   {
     id: "social-media-2",
-    icon: "facebook.svg",
+    icon: "home/facebook.svg",
     link: "https://www.facebook.com/",
   },
   {
     id: "social-media-3",
-    icon: "twitter.svg",
+    icon: "home/twitter.svg",
     link: "https://www.twitter.com/",
   },
   {
     id: "social-media-4",
-    icon: "linkedin.svg",
+    icon: "home/linkedin.svg",
     link: "https://www.linkedin.com/",
   },
 ];
@@ -157,88 +157,88 @@ export const socialMedia = [
 export const clients = [
   {
     id: "client-1",
-    logo: "logo-veterinario-1.png",
+    logo: "home/logo-veterinario-1.png",
   },
   {
     id: "client-2",
-    logo: "logo-veterinario-2.png",
+    logo: "home/logo-veterinario-2.png",
   },
   {
     id: "client-3",
-    logo: "logo-veterinario-3.png",
+    logo: "home/logo-veterinario-3.png",
   },
   {
     id: "client-4",
-    logo: "logo-veterinario-4.png",
+    logo: "home/logo-veterinario-4.png",
   },
   {
     id: "client-5",
-    logo: "logo-veterinario-5.png",
+    logo: "home/logo-veterinario-5.png",
   },
   {
     id: "client-6",
-    logo: "logo-veterinario-6.png",
+    logo: "home/logo-veterinario-6.png",
   },
   {
     id: "client-7",
-    logo: "logo-veterinario-7.png",
+    logo: "home/logo-veterinario-7.png",
   },
   {
     id: "client-8",
-    logo: "logo-veterinario-8.png",
+    logo: "home/logo-veterinario-8.png",
   },
   {
     id: "client-9",
-    logo: "logo-veterinario-9.png",
+    logo: "home/logo-veterinario-9.png",
   },
   {
     id: "client-10",
-    logo: "logo-veterinario-10.png",
+    logo: "home/logo-veterinario-10.png",
   },
   {
     id: "client-11",
-    logo: "logo-veterinario-11.png",
+    logo: "home/logo-veterinario-11.png",
   },
   {
     id: "client-12",
-    logo: "logo-veterinario-12.png",
+    logo: "home/logo-veterinario-12.png",
   },
   {
     id: "client-13",
-    logo: "logo-veterinario-13.png",
+    logo: "home/logo-veterinario-13.png",
   },
   {
     id: "client-14",
-    logo: "logo-veterinario-14.png",
+    logo: "home/logo-veterinario-14.png",
   },
   {
     id: "client-15",
-    logo: "logo-veterinario-15.png",
+    logo: "home/logo-veterinario-15.png",
   },
   {
     id: "client-16",
-    logo: "logo-veterinario-16.png",
+    logo: "home/logo-veterinario-16.png",
   },
 ];
 
 export const services = [
   {
     id: "services-1",
-    icon: "pets.png",
+    icon: "home/pets.png",
     title: "Supervisamos a tu Mascota",
     content:
       "De forma interactiva, podrás supervisar muy fácilmente la salud de tu mascota.",
   },
   {
     id: "services-2",
-    icon: "carne.png",
+    icon: "home/carne.png",
     title: "Vigila su Alimentación",
     content:
       "Podrás vigilar el número de comidas y los cambios de peso que haya sufrido tu mascota.",
   },
   {
     id: "services-3",
-    icon: "calendar.png",
+    icon: "home/calendar.png",
     title: "Agenda tu Cita con el Veterinario",
     content:
       "De forma muy simple, podrás agendar tu próxima cita en el veterinario más cercano.",
@@ -248,21 +248,21 @@ export const services = [
 export const features = [
   {
     id: "features-1",
-    icon: "game.png",
+    icon: "home/game.png",
     title: "Interfaz Interactiva",
     content:
       "Nuestra interfaz está basada en un videojuego para facilitar la interactuación con la misma",
   },
   {
     id: "features-2",
-    icon: "app-store.png",
+    icon: "home/app-store.png",
     title: "Tienda de Aplicaciones",
     content:
       "Podrás descargar nuestra aplicación para poder supervisar la salud de la mascota en cualquier momento.",
   },
   {
     id: "features-3",
-    icon: "24horas.png",
+    icon: "home/24horas.png",
     title: "Atención 24/7",
     content:
       "Nuestra atención al cliente 24 horas te ayudará a resolver cualquiera de las dudas que te surja durante el proceso.",

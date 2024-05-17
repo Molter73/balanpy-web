@@ -7,7 +7,7 @@ export default function Footer() {
         <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
           <div className="flex-1 flex flex-col justify-start mr-10">
             <img
-              src="logo-balanpy-white.png"
+              src="home/logo-balanpy-white.png"
               alt="Logo Blanco"
               className="w-[300px] h-[75px] object-contain mb-5"
             />

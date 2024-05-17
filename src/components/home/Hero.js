@@ -43,9 +43,9 @@ export default function Hero() {
           className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}
         >
           <img
-            src="/bulldog.png"
+            src="home/bulldog.png"
             alt="bulldog"
-            className="w-[90%] h-[90%] relative z-[5] mr-20"
+            className="w-[460px] h-[460px] relative z-[5] mr-20"
           />
         </div>
       </section>
