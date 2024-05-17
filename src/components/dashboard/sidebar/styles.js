@@ -1,5 +1,5 @@
 export const styles = {
-    root: "fixed flex h-screen w-full max-w-[20rem] flex-col bg-white bg-clip-border justify-between align-center items-center",
+    root: "fixed flex h-screen w-full max-w-[20rem] flex-col bg-white bg-clip-border justify-around align-center items-center",
 
     logo: {
         container: "flex flex-col p-4 mb-2 items-center",
