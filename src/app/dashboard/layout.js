@@ -5,12 +5,11 @@ import "./styles.css";
 
 export default function DashboardLayout({ children }) {
     return (
-        <div className="">
-            <Sidebar />
-            <div className="sm:ml-[20rem]">
+        <div>
+            <Sidebar >
                 <Navbar />
                 <main className="h-full">{children}</main>
-            </div>
+            </Sidebar>
         </div>
     )
 }

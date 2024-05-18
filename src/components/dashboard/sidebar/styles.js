@@ -8,7 +8,6 @@ export const styles = {
 
     navigation: {
         container: "flex min-w-[240px] flex-col gap-1 p-2 text-balanpy-700",
-        item: "flex items-center w-full p-3 leading-tight transition-all rounded-lg outline-none text-start focus:text-balanpy-800 focus:font-bold",
     },
 
     promo: {
