@@ -11,10 +11,7 @@ import {
     cat_icon
 } from "@/constants/dashboard"
 
-let container_style = "flex flex-col bg-white align-center justify-between items-between border-2 border-balanpy-800 rounded-xl p-2"
-
 export default function Page() {
-
     return <div className="text-black p-6 bg-balanpy-50 grid gap-4 grid-cols-5 grid-rows-2">
         <Container styles="col-span-4">
             <div className="flex grid gap-4 grid-cols-4 grid-rows-1">
