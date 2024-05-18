@@ -6,8 +6,8 @@ export default function CurrentDateTime() {
     let date = `${d.getDate()} ${months[d.getMonth()]} ${d.getFullYear()}`
 
     return (
-                <div className="text-balanpy-800 text-sm">
-                    {`${time} ${date}`}
-                </div>
+        <div className="text-balanpy-800 text-sm">
+            {`${time} ${date}`}
+        </div>
     )
 }
