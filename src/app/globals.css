@@ -86,6 +86,7 @@
   }
 }
 
+
 .feedback-container .feedback-card:last-child {
   margin-right: 0px;
 }
@@ -97,4 +98,3 @@
 .feedback-card:hover {
   background: #279D8D;
 }
-
