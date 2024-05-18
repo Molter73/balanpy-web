@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -30,16 +31,18 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  text-fill-color: transparent;
 }
 
+
 .bg-balanpy-gradient {
-background: linear-gradient(
-  180deg,
-  #EAF8F6 10%,
-  #BFE0DB 65%,
-  #94D8CE 85%,
-  #70CABD 100%
-);
+  background: linear-gradient(
+    180deg,
+    #EAF8F6 10%,
+    #BFE0DB 65%,
+    #94D8CE 85%,
+    #70CABD 100%
+  );
 }
 
 .bg-clients-gradient {
@@ -56,7 +59,42 @@ background: linear-gradient(
   box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
 }
 
+.sidebar {
+  -webkit-animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-top 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
 .feedback-container .feedback-card:last-child {
-    margin-right: 0px;
+  margin-right: 0px;
+}
+
+.feedback-card {
+  background: #48BAAA;
+}
+
+.feedback-card:hover {
+  background: #279D8D;
 }
 

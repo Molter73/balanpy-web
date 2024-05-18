@@ -1,10 +1,14 @@
 import Image from "next/image";
+import { ButtonPrimary, ButtonSecondary } from "@/components/register/Button";
+import { Label } from "@/components/register/Label";
+import { InputPrimary } from "@/components/register/Input";
+import { fieldsFormLogin } from "@/constants/form";
 
 export default function Login() {
   return (
-    <main className="flex items-center justify-center p-8 min-h-screen bg-gradient-to-b from-emerald-300 from-20% via-emerald-400 via-65% to-emerald-900 to-100%">
+    <main className="flex items-center justify-center p-8 min-h-screen bg-gradient-to-b from-balanpy via-balanpy-800 to-balanpy-900">
       <div className="flex flex-row p-10 rounded-3xl w-3/5 h-3/5 bg-white">
-        <div className="flex-none border-r-2 p-5 content-center border-neutral-100">
+        <div className="flex-none border-r-2 p-5 content-center border-primary">
           <Image 
             src="/login-image.png"
             alt="Puppy login"
@@ -23,33 +27,29 @@ export default function Login() {
             />
           </div>
           <form>
-            <label className="text-xs text-zinc-700 font-medium">
-              Username
-            </label>
-           <input
-              placeholder="Enter your username"
-              className="mt-1 block w-full px-2 py-1 font-poppins font-light bg-transparent border border-slate-200 rounded-lg text-[11px] text-slate-400 shadow-sm placeholder-slate-200
-              focus:outline-none focus:border-slate-200 focus:ring-1 focus:ring-slate-200"
-           />
-           <label className="text-xs text-zinc-700 font-medium">
-              Password
-            </label>
-           <input
-              placeholder="Enter your password"
-              className="mt-1 block w-full px-2 py-1 font-poppins font-light bg-transparent border border-slate-200 rounded-lg text-[11px] text-slate-400 shadow-sm placeholder-slate-200
-              focus:outline-none focus:border-slate-200 focus:ring-1 focus:ring-slate-200"
-           />
-           <button type="submit" className="w-full mt-4 px-2 py-1 font-poppins font-light bg-emerald-300 rounded-lg text-[14px] text-zinc-50 border-2 border-emerald-300 hover:bg-white hover:text-emerald-300 focus:outline-none">Login</button>
+            {fieldsFormLogin.slice(0, 2).map((field) => (
+              <div key={field.id} className="flex flex-col w-full px-2 py-2">
+                  <Label text={field.labelText} htmlFor={field.id} />
+                  <InputPrimary id={field.id} placeholder={field.placeholder} />
+              </div>
+            ))}
+
+            <ButtonPrimary
+              text={"Login"}
+              href="/dashboard"
+              styles={"w-full"}
+            />
           </form>
 
           <p className="text-center p-2 text-sm text-zinc-700 font-medium">
             Aún no te has registrado?
           </p>
 
-          <button type="submit" className="w-full mt-1 px-2 py-1 font-poppins font-light bg-transparent border-2 border-emerald-300 rounded-lg text-[14px] text-emerald-300 shadow-sm placeholder-slate-200
-              focus:outline-none hover:bg-emerald-300 hover:text-white">
-            Regístrate ahora
-          </button>
+          <ButtonSecondary
+            text={"Regístrate ahora"}
+            href="/register"
+            styles={"w-full"}
+          />
         </div>
       </div>
     </main>
