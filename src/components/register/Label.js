@@ -1,7 +1,9 @@
+import styles from "@/app/style";
+
 export const Label = ({ htmlFor, text }) => {
     return(
         <label 
-            className="p-1 text-[11px] font-poppins font-medium text-zinc-700" 
+            className={`${styles.paragraph} font-poppins font-normal text-zinc-700`}
             htmlFor={htmlFor}
         >
             {text}

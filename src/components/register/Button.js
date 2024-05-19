@@ -18,7 +18,7 @@ export const ButtonSecondary = ({text, href, styles }) => {
       <Link href={href}>
         <button
           type="button"
-          className={`py-2 px-4 font-poppins font-semibold text-[14px] text-balanpy bg-white rounded-[6px] outline-none border-2 border-balanpy box-border hover:bg-balanpy hover:text-primary transition-all duration-300 ease-in-out ${styles}`}
+          className={`py-2 px-4 font-poppins font-semibold text-balanpy bg-white rounded-[6px] outline-none border-2 border-balanpy box-border hover:bg-balanpy hover:text-primary transition-all duration-300 ease-in-out ${styles}`}
           >
           {text}
         </button>
@@ -26,3 +26,10 @@ export const ButtonSecondary = ({text, href, styles }) => {
   );
 };
 
+ButtonSecondary.defaultProps = {
+  styles: "text-[14px]",
+};
+
+ButtonPrimary.defaultProps = {
+  styles: "text-[14px]",
+};

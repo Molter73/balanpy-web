@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { ButtonPrimary, ButtonSecondary } from "@/components/register/Button";
 import { Label } from "@/components/register/Label";
-import { InputPrimary } from "@/components/register/Input";
+import Input from "@/components/register/Input";
 import { fieldsFormLogin } from "@/constants/form";
 
 export default function Login() {
@@ -9,35 +9,35 @@ export default function Login() {
     <main className="flex items-center justify-center p-8 min-h-screen bg-gradient-to-b from-balanpy via-balanpy-800 to-balanpy-900">
       <div className="flex flex-row p-10 rounded-3xl w-3/5 h-3/5 bg-white">
         <div className="flex-none border-r-2 p-5 content-center border-primary">
-          <Image 
-            src="/login-image.png"
+          <Image
+            src="/login/login-image.png"
             alt="Puppy login"
             width={256}
             height={256}
             className="object-cover"
           />
-        </div> 
+        </div>
         <div className="flex-auto items-center justify-center p-8 w-60 h-68">
-          <div className="flex p-1.5 justify-center">
+          <div className="flex p-1.5 justify-center mb-10">
             <Image
-              src="/logo-color-image.png"
+              src="/home/logo-balanpy.png"
               alt="Logo Balanpy"
-              width={50}
-              height={50}
+              width={300}
+              height={300}
             />
           </div>
           <form>
             {fieldsFormLogin.slice(0, 2).map((field) => (
               <div key={field.id} className="flex flex-col w-full px-2 py-2">
-                  <Label text={field.labelText} htmlFor={field.id} />
-                  <InputPrimary id={field.id} placeholder={field.placeholder} />
+                <Label text={field.labelText} htmlFor={field.id} />
+                <Input id={field.id} placeholder={field.placeholder} />
               </div>
             ))}
 
             <ButtonPrimary
               text={"Login"}
               href="/dashboard"
-              styles={"w-full"}
+              styles={"w-full mt-5 mb-5"}
             />
           </form>
 
