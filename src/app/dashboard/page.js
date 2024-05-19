@@ -14,7 +14,7 @@ import {
 export default function Page() {
     return <div className="text-black p-6 bg-balanpy-50 grid gap-4 grid-cols-5 grid-rows-2">
         <Container styles="col-span-4">
-            <div className="flex grid gap-4 grid-cols-4 grid-rows-1">
+            <div className="grid gap-4 grid-cols-4 grid-rows-1">
                 <PetInfo />
                 <div className="flex flex-col text-center align-center justify-center items-center col-span-3">
                     <span className="text-xl text-balanpy-800 font-bold">¿Qué quieres hacer?</span>
