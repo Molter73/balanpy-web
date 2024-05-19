@@ -36,10 +36,13 @@ export default function Home() {
       </div>
 
       <div className={`bg-clients-gradient`}>
-        <div className={styles.boxWidth}>
+        <div className={`w-full`}>
           <Clients />
         </div>
-        <img src="home/curvas-fondo.png" className="w-full object-cover relative" />
+        <img
+          src="home/curvas-fondo.png"
+          className="w-full object-cover relative"
+        />
       </div>
 
       <div
