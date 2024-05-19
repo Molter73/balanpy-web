@@ -1,5 +1,5 @@
-import { styles } from "../../app/style";
-import { ButtonPrimary, ButtonSecondary } from "./Button";
+import { styles } from "@/app/style";
+import { ButtonPrimary, ButtonSecondary } from "@/components/Button";
 
 export default function Hero() {
     return (
