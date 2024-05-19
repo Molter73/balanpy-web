@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ButtonPrimary, ButtonSecondary } from "@/components/register/Button";
+import { ButtonPrimary, ButtonSecondary } from "@/components/Button";
 import { Label } from "@/components/register/Label";
 import Input from "@/components/register/Input";
 import { fieldsFormLogin } from "@/constants/form";
