@@ -1,7 +1,7 @@
 import Check from "@/components/pets/check";
 import Input from "@/components/pets/input";
-import Button1 from "@/components/pets/button";
-import { Button2 } from "@/components/pets/button";
+import Button1 from "@/components/pets/Steps";
+import { Button2 } from "@/components/pets/Steps";
 import { LabelPets } from "@/constants/const-labelPets";
 import { InputRow } from "@/components/pets/inputRow";
 import { ButtonPrimary, ButtonSecondary } from "@/components/home/Button";
