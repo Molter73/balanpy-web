@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Input from "@/components/register/Input";
-import { ButtonPrimary, ButtonSecondary } from "@/components/register/Button";
+import { ButtonPrimary, ButtonSecondary } from "@/components/Button";
 import { Label } from "@/components/register/Label";
 import { fieldsFormPrimary, fieldsFormSecundary } from "@/constants/form";
 import styles from "../style";
