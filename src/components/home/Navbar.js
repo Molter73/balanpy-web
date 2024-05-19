@@ -1,5 +1,5 @@
-import { navLinks } from "../../constants";
-import { ButtonPrimary, ButtonSecondary } from "./Button";
+import { navLinks } from "@/constants";
+import { ButtonPrimary, ButtonSecondary } from "@/components/Button";
 
 export default function Navbar() {
   return (
