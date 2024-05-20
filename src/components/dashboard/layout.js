@@ -1,8 +1,6 @@
 import Sidebar from "@/components/dashboard/sidebar"
 import Navbar from "@/components/dashboard/navbar"
 
-import "./styles.css";
-
 export default function DashboardLayout({ children }) {
     return (
         <div>
