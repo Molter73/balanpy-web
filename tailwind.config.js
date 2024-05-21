@@ -22,6 +22,7 @@ module.exports = {
           900: "#0D6C5F",
         },
         dimWhite: "rgba(255, 255, 255, 0.7)",
+        dimGray: "#E8E8E8",
         dimBlue: "rgba(9, 151, 124, 0.1)",
         yellow: colors.yellow,
         emerald: colors.emerald,
