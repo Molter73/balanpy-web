@@ -1,13 +1,26 @@
 export default function WeatherInfo() {
-    return (
-        <div className="flex flex-col align-between justify-between items-center m-3">
-            <div className="flex flex-col align-center justify-center items-center p-2">
-                <img height="100" width="100" src="/dashboard/sunny.svg" alt="weather" />
-                <span className="text-black font-bold p-1 text-2xl">Soleado</span>
-            </div>
-            <span className="text-balanpy-800 font-bold text-6xl">24 ºC</span>
-            <span className="text-black text-3xl">Sevilla</span>
-            <span className="text-balanpy-800 text-2xl font-semibold">¡Tiempo perfecto para salir!</span>
-        </div>
-    )
+  return (
+    <div className="flex flex-col items-center justify-between h-full p-4 py-12">
+      <div className="flex flex-col items-center">
+        <img
+          height="120"
+          width="120"
+          src="/dashboard/sunny.svg"
+          alt="weather"
+        />
+        <span className="text-black font-semibold text-xl mt-6">
+          Soleado
+        </span>
+      </div>
+      <span className="text-balanpy-800 font-medium text-[50px] leading-10">
+        24 ºC
+      </span>
+      <span className="font-regular text-black text-[20px]">
+        Sevilla
+      </span>
+      <span className="font-medium text-balanpy-800 text-[20px] text-center">
+        ¡Tiempo perfecto para salir!
+      </span>
+    </div>
+  );
 }

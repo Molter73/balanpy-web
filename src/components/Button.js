@@ -5,7 +5,7 @@ const Button = ({ styles, text, href }) => {
     <Link href={href}>
       <button
         type="button"
-        className={`py-2 px-4 font-poppins font-semibold rounded-[5px] outline-none border-4 border-balanpy box-border transition-all duration-300 ease-in-out ${styles}`}
+        className={`py-2 px-4 font-semibold rounded-[5px] outline-none border-4 border-balanpy box-border transition-all duration-300 ease-in-out ${styles}`}
       >
         {text}
       </button>
