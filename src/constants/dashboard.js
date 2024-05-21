@@ -30,6 +30,16 @@ export const cat_icon = {
     alt: "gato",
 }
 
+export const hamster_icon = {
+  src: "/dashboard/hamster.svg",
+  alt: "hamster",
+};
+
+export const bird_icon = {
+  src: "/dashboard/bird.svg",
+  alt: "Pájaro",
+};
+
 export const months = [
     "Jan", "Feb", "Mar", "Apr",
     "May", "Jun", "Jul", "Aug",

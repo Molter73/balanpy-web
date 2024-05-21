@@ -9,7 +9,9 @@ import DashboardLayout from "@/components/dashboard/layout"
 
 import {
     dog_icon,
-    cat_icon
+    cat_icon,
+    hamster_icon,
+    bird_icon
 } from "@/constants/dashboard"
 
 export default function Dashboard() {
@@ -71,16 +73,18 @@ export default function Dashboard() {
           <Container styles="col-span-1">
             <WeatherInfo />
           </Container>
-          <Container styles="col-span-4">
+          <Container styles="col-span-4 p-8">
             <Activities />
           </Container>
-          <Container styles="col-span-1">
-            <div className="flex flex-col text-center align-center justify-center items-center p-2">
-              <h2 className="text-gray-400 font-semibold text-3xl p-1">
+          <Container styles="col-span-1 h-full">
+            <div className="flex flex-col text-center align-top justify-center items-start p-2 h-full">
+              <h2 className="text-gray-400 font-semibold text-2xl text-center p-1 w-full mb-4">
                 Mascotas
               </h2>
               <Pet icon={dog_icon} type="Perros" count="1" />
               <Pet icon={cat_icon} type="Gatos" count="0" />
+              <Pet icon={hamster_icon} type="Hamsters" count="0" />
+              <Pet icon={bird_icon} type="Pájaros" count="0" />
             </div>
           </Container>
         </div>
