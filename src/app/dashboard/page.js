@@ -83,6 +83,12 @@ export default function Dashboard() {
                   count={pet.cantidad}
                 />
               ))}
+              <div className="flex flex-row w-full align-middle justify-center items-center bg-balanpy-800 rounded-full py-2 px-3 mt-10 cursor-pointer hover:bg-balanpy-900 transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-slate-300 ">
+                <img src="/dashboard/paw.svg" alt="huella" className="w-[18px] h-[18px] mr-2" />
+                <span className="text-balanpy-50 py-1 font-bold text-md">
+                  Añadir Mascota
+                </span>
+              </div>
             </div>
           </Container>
         </div>
