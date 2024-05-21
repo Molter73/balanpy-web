@@ -28,7 +28,7 @@ export default function Sidebar({children}) {
               );
             })}
           </nav>
-          <div className="border-[3px] rounded-[40px] border-balanpy-800 p-4 flex flex-col max-w-[15rem] items-center text-center text-black hover:bg-balanpy-800 transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-slate-400 hover:text-white">
+          <div className="border-[3px] rounded-[40px] border-balanpy-800 p-4 flex flex-col max-w-[15rem] items-center text-center text-black hover:bg-balanpy-800 transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-slate-400 hover:text-white cursor-pointer">
             <img
               src="/dashboard/diamond.svg"
               alt="Accede a premium"
