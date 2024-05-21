@@ -22,23 +22,35 @@ export const incomplete_state = {
 
 export const pets = [
   {
-    src: "/dashboard/dog.svg",
-    alt: "perro",
+    icon: {
+      src: "/dashboard/dog.svg",
+      alt: "perro",
+    },
+    text: "Perro",
     cantidad: 1,
   },
   {
-    src: "/dashboard/cat.svg",
-    alt: "gato",
+    icon: {
+      src: "/dashboard/cat.svg",
+      alt: "gato",
+    },
+    text: "Gato",
     cantidad: 0,
   },
   {
-    src: "/dashboard/hamster.svg",
-    alt: "hamster",
+    icon: {
+      src: "/dashboard/hamster.svg",
+      alt: "hamster",
+    },
+    text: "Hámster",
     cantidad: 0,
   },
   {
-    src: "/dashboard/bird.svg",
-    alt: "Pájaro",
+    icon: {
+      src: "/dashboard/bird.svg",
+      alt: "pajaro",
+    },
+    text: "Pájaro",
     cantidad: 0,
   },
 ];
