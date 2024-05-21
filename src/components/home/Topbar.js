@@ -10,7 +10,7 @@ export default function Topbar() {
               alt="phone"
               className="w-[16px] h-[16px] object-contain"
             />
-            <p className="font-poppins font-normal text-[12px] leading-[12px] text-white">
+            <p className="font-normal text-[12px] leading-[12px] text-white">
               +34 666 666 666
             </p>
           </div>
@@ -20,7 +20,7 @@ export default function Topbar() {
               alt="email"
               className="w-[16px] h-[16px] object-contain"
             />
-            <p className="font-poppins font-normal text-[12px] leading-[12px] text-white">
+            <p className="font-normal text-[12px] leading-[12px] text-white">
               info@balanpy.com
             </p>
           </div>

@@ -7,8 +7,8 @@ export default function Sidebar({children}) {
       <div>
         <div className="fixed flex h-screen w-full max-w-[20rem] flex-col bg-white bg-clip-border justify-around align-center items-center shadow-lg">
           <div className="flex flex-col p-4 mb-2 items-center">
-            <img src="/balanpy.svg" className="w-[110px] h-[110px]" />
-            <h5 className="block text-balanpy text-[36px] font-bold font-poppins">
+            <img src="/balanpy.svg" alt="Logo Balanpy" className="w-[110px] h-[110px]" />
+            <h5 className="block text-balanpy text-[36px] font-bold">
               Balanpy
             </h5>
             <div className="w-full h-[2px] bg-dimGray mt-4"></div>
@@ -37,7 +37,7 @@ export default function Sidebar({children}) {
             <h5 className="block text-[30px] font-semibold leading-8 mt-4">
               Accede a premium
             </h5>
-            <h6 className="block font-poppins text-[14px] font-normal leading-1 mt-5 mb-5">
+            <h6 className="block text-[14px] font-normal leading-1 mt-5 mb-5">
               Obtén ahora todas las características de Balanpy como registro de
               mascotas ilimitadas o descuentos en tu veterinario.
             </h6>

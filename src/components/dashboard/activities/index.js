@@ -10,7 +10,7 @@ import {
 export default function Activities() {
     return (
       <>
-        <h2 className="font-poppins text-gray-400 font-medium text-3xl p-2">
+        <h2 className="text-gray-400 font-medium text-3xl p-2">
           Actividades recientes
         </h2>
         <ActivityRow

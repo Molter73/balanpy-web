@@ -12,7 +12,7 @@ export default function ActivityRow({icon, type, time, info, state}) {
         <div
           className={`flex align-center items-center justify-center rounded-2xl p-2 ${state.background}`}
         >
-          <span className="font-poppins text-white text-xl font-regulars">
+          <span className="text-white text-xl font-regulars">
             {state.text}
           </span>
         </div>

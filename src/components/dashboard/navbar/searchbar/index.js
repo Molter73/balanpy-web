@@ -12,7 +12,7 @@ export default function SearchBar() {
         <input
           type="text"
           id="search-navbar"
-          className="block font-poppins w-full p-2 pl-10 text-md text-center font-semibold text-dimGray border-[3px] border-gray-300 rounded-full bg-balanpy-50"
+          className="block w-full p-2 pl-10 text-md text-center font-medium text-gray-300 border-[3px] border-gray-300 rounded-full bg-balanpy-50"
           placeholder="CAMBIAR MASCOTA"
         />
       </div>

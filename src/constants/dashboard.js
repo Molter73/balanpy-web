@@ -20,25 +20,28 @@ export const incomplete_state = {
     background: "bg-gray-500",
 }
 
-export const dog_icon = {
+export const pets = [
+  {
     src: "/dashboard/dog.svg",
     alt: "perro",
-}
-
-export const cat_icon = {
+    cantidad: 1,
+  },
+  {
     src: "/dashboard/cat.svg",
     alt: "gato",
-}
-
-export const hamster_icon = {
-  src: "/dashboard/hamster.svg",
-  alt: "hamster",
-};
-
-export const bird_icon = {
-  src: "/dashboard/bird.svg",
-  alt: "Pájaro",
-};
+    cantidad: 0,
+  },
+  {
+    src: "/dashboard/hamster.svg",
+    alt: "hamster",
+    cantidad: 0,
+  },
+  {
+    src: "/dashboard/bird.svg",
+    alt: "Pájaro",
+    cantidad: 0,
+  },
+];
 
 export const months = [
     "Jan", "Feb", "Mar", "Apr",

@@ -8,7 +8,7 @@ export default function Testimonials({content, name, title, img }) {
           alt="double_quotes"
           className="w-[60px] h-[60px] object-contain"
         />
-        <p className="font-poppins font-normal text-[16px] leading-[28px] text-white my-10">
+        <p className="font-normal text-[16px] leading-[28px] text-white my-10">
           {content}
         </p>
         <div className="flex flex-row">
@@ -19,7 +19,7 @@ export default function Testimonials({content, name, title, img }) {
           />
           <div className="flex flex-col ml-4">
             <h4 className={`${styles.heading4} text-white`}>{name}</h4>
-            <p className="font-poppins font-normal text-[16px] leading-[24px] text-dimWhite">
+            <p className="font-normal text-[16px] leading-[24px] text-dimWhite">
               {title}
             </p>
           </div>

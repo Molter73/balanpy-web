@@ -8,17 +8,17 @@ export default function WeatherInfo() {
           src="/dashboard/sunny.svg"
           alt="weather"
         />
-        <span className="font-poppins text-black font-semibold text-xl mt-6">
+        <span className="text-black font-semibold text-xl mt-6">
           Soleado
         </span>
       </div>
-      <span className="font-poppins text-balanpy-800 font-medium text-[50px] leading-10">
+      <span className="text-balanpy-800 font-medium text-[50px] leading-10">
         24 ºC
       </span>
-      <span className="font-poppins font-regular text-black text-[20px]">
+      <span className="font-regular text-black text-[20px]">
         Sevilla
       </span>
-      <span className="font-poppins font-medium text-balanpy-800 text-[20px] text-center">
+      <span className="font-medium text-balanpy-800 text-[20px] text-center">
         ¡Tiempo perfecto para salir!
       </span>
     </div>

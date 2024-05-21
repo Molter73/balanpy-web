@@ -4,7 +4,7 @@ export default function UserData() {
             <div className="bg-white p-2 rounded-md">
                 <img src="/dashboard/notification.svg" />
             </div>
-            <div className="font-poppins text-black p-2">
+            <div className="text-black p-2">
                 Alejandro Delgado
             </div>
             <div>
