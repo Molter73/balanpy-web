@@ -20,6 +20,14 @@ export const incomplete_state = {
     background: "bg-gray-500",
 }
 
+const incompleteActivity = {
+  icon: incomplete_activity,
+  type: "-",
+  time: "-",
+  info: "-",
+  state: incomplete_state,
+};
+
 export const activitiesData = [
   {
     icon: feed_activity,
@@ -28,59 +36,17 @@ export const activitiesData = [
     info: "400 gr",
     state: feed_state,
   },
-  {
-    icon: incomplete_activity,
-    type: "-",
-    time: "-",
-    info: "-",
-    state: incomplete_state,
-  },
-  {
-    icon: incomplete_activity,
-    type: "-",
-    time: "-",
-    info: "-",
-    state: incomplete_state,
-  },
-  {
-    icon: incomplete_activity,
-    type: "-",
-    time: "-",
-    info: "-",
-    state: incomplete_state,
-  },
+  incompleteActivity,
+  incompleteActivity,
+  incompleteActivity,
+];
+export const noPetsActivitiesData = [
+  incompleteActivity,
+  incompleteActivity,
+  incompleteActivity,
+  incompleteActivity,
 ];
 
-export const noPetsActivitiesData = [
-  {
-    icon: incomplete_activity,
-    type: "-",
-    time: "-",
-    info: "-",
-    state: incomplete_state,
-  },
-  {
-    icon: incomplete_activity,
-    type: "-",
-    time: "-",
-    info: "-",
-    state: incomplete_state,
-  },
-  {
-    icon: incomplete_activity,
-    type: "-",
-    time: "-",
-    info: "-",
-    state: incomplete_state,
-  },
-  {
-    icon: incomplete_activity,
-    type: "-",
-    time: "-",
-    info: "-",
-    state: incomplete_state,
-  },
-];
 
 export const pets = [
   {

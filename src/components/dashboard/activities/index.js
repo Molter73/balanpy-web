@@ -1,11 +1,4 @@
-// src/components/dashboard/activity-list.js
 import ActivityRow from "@/components/dashboard/activity-row";
-import {
-  feed_activity,
-  feed_state,
-  incomplete_activity,
-  incomplete_state,
-} from "@/constants/dashboard";
 
 const ActivityList = ({ activities }) => {
   return (
