@@ -4,26 +4,34 @@ import Container from "@/components/dashboard/container"
 import DashboardLayout from "@/components/dashboard/layout"
 import { vetCenters } from "@/constants/vet";
 export default function Dashboard() {
-    const [currentPage, setCurrentPage] = useState(1)
+    const [currentPage, setCurrentPage] = useState(0)
     const itemsPerPage = 10
     const totalPages = Math.ceil(vetCenters.length / itemsPerPage)
 
     const handleNextPage = () => {
-      if (currentPage < totalPages) {
+      if (currentPage < totalPages - 1) {
         setCurrentPage(currentPage + 1)
       }
     }
 
     const handlePrevPage = () => {
-      if (currentPage > 1) {
+      if (currentPage > 0) {
         setCurrentPage(currentPage - 1)
       }
     }
 
     const displayedCenters = vetCenters.slice(
-      (currentPage - 1) * itemsPerPage,
-      currentPage * itemsPerPage
+      currentPage * itemsPerPage,
+      (currentPage + 1) * itemsPerPage
     )
+
+    const currentVetLow = currentPage * itemsPerPage + 1;
+    
+    const currentVetHigh = Math.min(
+      (currentPage + 1) * itemsPerPage,
+      vetCenters.length
+    );
+
 
     return (
       <DashboardLayout className="h-full bg-balanpy-50">
@@ -121,14 +129,12 @@ export default function Dashboard() {
             </table>
             <div className="flex justify-between items-center mt-4">
               <span className="font-regular text-md">
-                Centros Veterinarios: {(currentPage - 1) * itemsPerPage + 1} -{" "}
-                {Math.min(currentPage * itemsPerPage, vetCenters.length)} de{" "}
-                {vetCenters.length}
+                {`Centros Veterinarios: ${currentVetLow} - ${currentVetHigh} de ${vetCenters.length}`}
               </span>
               <div className="flex items-center space-x-2">
                 <button
                   onClick={handlePrevPage}
-                  disabled={currentPage === 1}
+                  disabled={currentPage === 0}
                   className="bg-white text-gray-700 px-[10px] py-1 rounded-md disabled:opacity-50 border-[1px] border-gray-300"
                 >
                   &lt;
@@ -136,9 +142,9 @@ export default function Dashboard() {
                 {[...Array(totalPages)].map((_, pageIndex) => (
                   <button
                     key={pageIndex}
-                    onClick={() => setCurrentPage(pageIndex + 1)}
+                    onClick={() => setCurrentPage(pageIndex)}
                     className={`px-[10px] py-1 rounded-md ${
-                      pageIndex + 1 === currentPage
+                      pageIndex === currentPage
                         ? "bg-balanpy-800 text-white border-[1px] border-balanpy-800"
                         : "bg-white text-gray-700 border-gray-300 border-[1px]"
                     }`}
@@ -148,7 +154,7 @@ export default function Dashboard() {
                 ))}
                 <button
                   onClick={handleNextPage}
-                  disabled={currentPage === totalPages}
+                  disabled={currentPage === totalPages - 1}
                   className="bg-white text-gray-700 px-[10px] py-1 rounded-md disabled:opacity-50 border-[1px] border-gray-300"
                 >
                   &gt;
