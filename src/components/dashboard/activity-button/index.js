@@ -16,7 +16,7 @@ export default function ActivityButton({ text, image, hoverImage, alt_text }) {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         onClick={toggleModal}
-        className="flex flex-col items-center"
+        className="flex flex-col items-center justify-center align-center p-4"
       >
         <img
           src={isHovered ? hoverImage : image}
