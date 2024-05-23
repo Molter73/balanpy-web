@@ -4,9 +4,9 @@ import Pet from "@/components/dashboard/pet"
 import PetInfo from "@/components/dashboard/pet-info"
 import Container from "@/components/dashboard/container"
 import WeatherInfo from "@/components/dashboard/weather-info"
-import Activities from "@/components/dashboard/activities"
+import ActivityList from "@/components/dashboard/activities";
 import DashboardLayout from "@/components/dashboard/layout"
-import { pets } from "@/constants/dashboard"
+import { pets, activitiesData } from "@/constants/dashboard";
 
 export default function Dashboard() {
     return (
@@ -72,7 +72,7 @@ export default function Dashboard() {
             <WeatherInfo />
           </Container>
           <Container styles="col-span-4 p-8">
-            <Activities />
+            <ActivityList activities={activitiesData} />
           </Container>
           <Container styles="col-span-1 h-full">
             <div className="flex flex-col text-center align-top justify-center items-start p-2 h-full">
