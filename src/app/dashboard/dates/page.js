@@ -1,7 +1,6 @@
 import Container from "@/components/dashboard/container";
 import DashboardLayout from "@/components/dashboard/layout";
 import { ButtonPrimary } from "@/components/Button";
-import "../styles.css";
 
 export default function Dashboard() {
   return (
