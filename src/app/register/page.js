@@ -8,7 +8,7 @@ import styles from "../style";
 
 export default function RegisterUser(){
     return (
-      <main className="flex flex-col items-center justify-center p-8 min-h-screen bg-gradient-to-b from-balanpy via-balanpy-800 to-balanpy-900">
+      <main className="flex flex-col items-center justify-center p-8 min-h-screen bg-gradient-to-b from-balanpy-400 via-balanpy-700 to-balanpy-900">
         <div className="flex justify-center items-center mb-5">
           <Image
             src="/logo-white-image.png"
@@ -19,13 +19,13 @@ export default function RegisterUser(){
         </div>
         <div className="mt-1">
           <h2
-            className={`${styles.heading3} font-bold text-[30px] text-white text-center mb-5`}
+            className={`${styles.heading3} font-bold text-[30px] text-white text-center mb-10`}
           >
             Completa el Registro
           </h2>
         </div>
 
-        <div className="flex flex-col justify-center items-center p-6 mt-4 rounded-3xl w-4/5 bg-white gap-8">
+        <div className="flex flex-col justify-center items-center p-8 rounded-3xl w-4/5 bg-white gap-4">
           <div className="flex flex-row justify-between w-full">
             {fieldsFormPrimary.slice(0, 3).map((field) => (
               <div key={field.id} className="flex flex-col w-1/3 px-2 py-6">
@@ -63,8 +63,16 @@ export default function RegisterUser(){
           </div>
 
           <div className="flex flex-row justify-center gap-3 w-full mt-2">
-            <ButtonSecondary text={"Cancelar"} href="/" styles={"text-[16px]"}/>
-            <ButtonPrimary text={"Regístrate"} href="/dashboard" styles={"text-[16px]"}/>
+            <ButtonSecondary
+              text={"Cancelar"}
+              href="/"
+              styles={"text-[16px]"}
+            />
+            <ButtonPrimary
+              text={"Regístrate"}
+              href="/dashboard"
+              styles={"text-[16px]"}
+            />
           </div>
         </div>
       </main>
