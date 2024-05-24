@@ -12,28 +12,24 @@ import { getApiUrl } from "@/config"
 
 const apiUrl = getApiUrl()
 
-async function getPet() {
-  const res = await fetch(`${apiUrl}/pet.json`, { cache: "no-store" })
+async function getApiData(endpoint, defaultValue) {
+  const res = await fetch(`${apiUrl}/${endpoint}`, { cache: "no-store" })
   if (!res.ok) {
-    return undefined
+    return defaultValue
   }
   return res.json()
+}
+
+async function getPet() {
+  return getApiData("pet.json", undefined)
 }
 
 async function getPets() {
-  const res = await fetch(`${apiUrl}/pets.json`, {cache: "no-store" })
-  if (!res.ok) {
-    return []
-  }
-  return res.json()
+  return getApiData("pets.json", [])
 }
 
 async function getActivities() {
-  const res = await fetch(`${apiUrl}/activities.json`, {cache: "no-store"})
-  if (!res.ok) {
-    return []
-  }
-  return res.json()
+  return getApiData("activities.json", [])
 }
 
 function noPet() {
