@@ -7,10 +7,7 @@ export const incompleteActivity = {
   type: "-",
   time: "-",
   info: "-",
-  state: {
-    text: "No History",
-    background: "bg-gray-500",
-  },
+  state: "No History",
 };
 
 export const months = [
