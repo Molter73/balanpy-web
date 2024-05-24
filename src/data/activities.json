@@ -1,0 +1,28 @@
+[
+  {
+    "icon": {
+      "src": "/dashboard/food.svg",
+      "alt": "comida",
+      "background": "bg-balanpy-800"
+    },
+    "type": "Comida",
+    "time": "4:48:54 PM",
+    "state": {
+      "text": "Completado",
+      "background": "bg-balanpy-700"
+    }
+  },
+  {
+    "icon": {
+      "src": "/dashboard/food.svg",
+      "alt": "comida",
+      "background": "bg-balanpy-800"
+    },
+    "type": "Comida",
+    "time": "4:48:54 PM",
+    "state": {
+      "text": "Completado",
+      "background": "bg-balanpy-700"
+    }
+  }
+]

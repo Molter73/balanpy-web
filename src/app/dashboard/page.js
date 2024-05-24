@@ -6,7 +6,6 @@ import Container from "@/components/dashboard/container"
 import WeatherInfo from "@/components/dashboard/weather-info"
 import ActivityList from "@/components/dashboard/activities";
 import DashboardLayout from "@/components/dashboard/layout"
-import { activitiesData } from "@/constants/dashboard";
 import { ButtonPrimary } from "@/components/Button";
 
 async function getPet() {
@@ -20,7 +19,15 @@ async function getPet() {
 async function getPets() {
   const res = await fetch("http://localhost:8082/pets.json", {cache: "no-store" })
   if (!res.ok) {
-    return undefined
+    return []
+  }
+  return res.json()
+}
+
+async function getActivities() {
+  const res = await fetch("http://localhost:8082/activities.json", {cache: "no-store"})
+  if (!res.ok) {
+    return []
   }
   return res.json()
 }
@@ -115,17 +122,28 @@ function generatePet(pet) {
 export default async function Dashboard() {
   let petPromise = getPet()
   let petsPromise = getPets()
+  let activitiesPromise = getActivities()
 
   let responses
   let pet
   let pets
+  let activities
   try {
-    let responses = await Promise.all([petPromise, petsPromise])
+    let responses = await Promise.all([
+      petPromise,
+      petsPromise,
+      activitiesPromise
+    ])
+
     pet = responses[0]
     pets = responses[1]
+    activities = responses[2]
   } catch (e) {
+    console.log(e)
+
     pet = undefined
     pets = []
+    activities = []
   }
 
   let petComponent
@@ -147,7 +165,7 @@ export default async function Dashboard() {
           <WeatherInfo />
         </Container>
         <Container styles="col-span-4 p-8">
-          <ActivityList activities={activitiesData} />
+          <ActivityList activities={activities} />
         </Container>
         <Container styles="col-span-1 h-full">
           <div className="flex flex-col text-center align-top justify-center items-start p-2 h-full">

@@ -1,7 +1,6 @@
 import StatusBar from "@/components/dashboard/statusbar"
 
 export default function PetInfo({ image, status }) {
-  console.log(image, status)
   return (
     <div className="flex flex-col col-span-1 border-[3px] rounded-[20px] border-balanpy-800 align-center justify-center items-center p-4 text-black font-regular">
       <img src={image.src} alt={image.alt} className="rounded-full mb-2" />
