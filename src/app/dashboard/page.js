@@ -6,10 +6,14 @@ import Container from "@/components/dashboard/container"
 import WeatherInfo from "@/components/dashboard/weather-info"
 import ActivityList from "@/components/dashboard/activities";
 import DashboardLayout from "@/components/dashboard/layout"
-import { ButtonPrimary } from "@/components/Button";
+import { ButtonPrimary } from "@/components/Button"
+
+import { getApiUrl } from "@/config"
+
+const apiUrl = getApiUrl()
 
 async function getPet() {
-  const res = await fetch("http://localhost:8082/pet.json", { cache: "no-store" })
+  const res = await fetch(`${apiUrl}/pet.json`, { cache: "no-store" })
   if (!res.ok) {
     return undefined
   }
@@ -17,7 +21,7 @@ async function getPet() {
 }
 
 async function getPets() {
-  const res = await fetch("http://localhost:8082/pets.json", {cache: "no-store" })
+  const res = await fetch(`${apiUrl}/pets.json`, {cache: "no-store" })
   if (!res.ok) {
     return []
   }
@@ -25,7 +29,7 @@ async function getPets() {
 }
 
 async function getActivities() {
-  const res = await fetch("http://localhost:8082/activities.json", {cache: "no-store"})
+  const res = await fetch(`${apiUrl}/activities.json`, {cache: "no-store"})
   if (!res.ok) {
     return []
   }
