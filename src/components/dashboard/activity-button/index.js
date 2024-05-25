@@ -16,17 +16,19 @@ export default function ActivityButton({ text, image, hoverImage, alt_text, moda
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
         onClick={toggleModal}
-        className="flex flex-col items-center justify-center align-center p-4"
+        className="flex flex-col items-center justify-center align-center p-4 cursor-pointer"
       >
-        <img
-          src={isHovered ? hoverImage : image}
-          alt={alt_text}
-          height="64"
-          width="64"
-          className="border rounded-xl border-balanpy-800 bg-balanpy-50 p-3 h-[64px] w-[64px] mb-2 cursor-pointer hover:bg-balanpy-800 transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-slate-300"
-        />
-        <span className="text-black font-regular text-[14px]">{text}</span>
+        <div className="border rounded-xl border-balanpy-800 bg-balanpy-50 p-3 h-[64px] w-[64px] mb-2 hover:bg-balanpy-800 transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-slate-300 flex items-center justify-center">
+          <img
+            src={isHovered ? hoverImage : image}
+            alt={alt_text}
+            height="64"
+            width="64"
+            className="h-[64px] w-[64px]"
+          />
+        </div>
       </div>
+      <span className="text-black font-regular text-[14px]">{text}</span>
       <Modal show={showModal} onClose={toggleModal} data={modalData} />
     </div>
   );
