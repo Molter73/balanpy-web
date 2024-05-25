@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Modal from "@/components/modal";
 
-export default function ActivityButton({ text, image, hoverImage, alt_text }) {
+export default function ActivityButton({ text, image, hoverImage, alt_text, modalData }) {
   const [isHovered, setIsHovered] = useState(false);
   const [showModal, setShowModal] = useState(false);
 
@@ -27,7 +27,7 @@ export default function ActivityButton({ text, image, hoverImage, alt_text }) {
         />
         <span className="text-black font-regular text-[14px]">{text}</span>
       </div>
-      <Modal show={showModal} onClose={toggleModal} />
+      <Modal show={showModal} onClose={toggleModal} data={modalData} />
     </div>
   );
 }
