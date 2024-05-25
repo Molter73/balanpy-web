@@ -1,0 +1,24 @@
+{
+  "image": {
+    "src": "/dashboard/pet.png",
+    "alt": "your pet"
+  },
+  "status": [
+    {
+      "value": 75,
+      "name": "Comida"
+    },
+    {
+      "value": 95,
+      "name": "Paseos"
+    },
+    {
+      "value": 50,
+      "name": "Higiene"
+    },
+    {
+      "value": 15,
+      "name": "Vacunación"
+    }
+  ]
+}

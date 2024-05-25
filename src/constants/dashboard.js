@@ -1,87 +1,14 @@
-export const feed_activity = {
-    src: "/dashboard/food.svg",
-    alt: "comida",
-    background: "bg-balanpy-800",
-}
-
-export const feed_state = {
-    text: "Completado",
-    background: "bg-balanpy-700",
-}
-
-export const incomplete_activity = {
+export const incompleteActivity = {
+  icon: {
     src: "/dashboard/question.svg",
     alt: "actividad incompleta",
     background: "bg-gray-500",
-}
-
-export const incomplete_state = {
-    text: "No History",
-    background: "bg-gray-500",
-}
-
-const incompleteActivity = {
-  icon: incomplete_activity,
+  },
   type: "-",
   time: "-",
   info: "-",
-  state: incomplete_state,
+  state: "No History",
 };
-
-export const activitiesData = [
-  {
-    icon: feed_activity,
-    type: "Comida",
-    time: "4:48:24 PM",
-    info: "400 gr",
-    state: feed_state,
-  },
-  incompleteActivity,
-  incompleteActivity,
-  incompleteActivity,
-];
-export const noPetsActivitiesData = [
-  incompleteActivity,
-  incompleteActivity,
-  incompleteActivity,
-  incompleteActivity,
-];
-
-
-export const pets = [
-  {
-    icon: {
-      src: "/dashboard/dog.svg",
-      alt: "perro",
-    },
-    text: "Perro",
-    cantidad: 1,
-  },
-  {
-    icon: {
-      src: "/dashboard/cat.svg",
-      alt: "gato",
-    },
-    text: "Gato",
-    cantidad: 0,
-  },
-  {
-    icon: {
-      src: "/dashboard/hamster.svg",
-      alt: "hamster",
-    },
-    text: "Hámster",
-    cantidad: 0,
-  },
-  {
-    icon: {
-      src: "/dashboard/bird.svg",
-      alt: "pajaro",
-    },
-    text: "Pájaro",
-    cantidad: 0,
-  },
-];
 
 export const months = [
     "Jan", "Feb", "Mar", "Apr",
