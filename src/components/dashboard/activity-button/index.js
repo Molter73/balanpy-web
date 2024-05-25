@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import Modal from "@/components/modal";
+import Modal from "@/components/dashboard/modal";
 
 export default function ActivityButton({ text, image, hoverImage, alt_text, modalData }) {
   const [isHovered, setIsHovered] = useState(false);
