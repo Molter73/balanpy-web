@@ -18,7 +18,7 @@ export const months = [
 
 export const navigation = [
     {
-        href: "#dashboard",
+        href: "/dashboard",
         text: "Dashboard",
         image: {
             src: "/dashboard/dashboard.svg",
@@ -34,7 +34,7 @@ export const navigation = [
         },
     },
     {
-        href: "#veterinarios",
+        href: "/dashboard/vet",
         text: "Veterinarios",
         image: {
             src: "/dashboard/veterinarios.svg",
@@ -42,7 +42,7 @@ export const navigation = [
         },
     },
     {
-        href: "#tus-citas",
+        href: "/dashboard/dates",
         text: "Tus Citas",
         image: {
             src: "/dashboard/tus-citas.svg",
@@ -50,7 +50,7 @@ export const navigation = [
         },
     },
     {
-        href: "#ajustes",
+        href: "/dashboard/settings",
         text: "Ajustes",
         image: {
             src: "/dashboard/ajustes.svg",
