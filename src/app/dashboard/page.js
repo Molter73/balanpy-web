@@ -10,6 +10,66 @@ import { ButtonPrimary } from "@/components/Button"
 
 import { getApiUrl } from "@/config"
 
+const feedActivity = {
+  title: "¡Es hora de darle de comer a tu mascota!",
+  activity: {
+    text: "Cantidad comida",
+    type: "number",
+    placeholder: "Cantidad de comida en gramos",
+  },
+  registerTime: {
+    text: "Hora de la comida",
+    type: "time",
+    placeholder: "Añade la hora de la comida",
+  },
+  accept: "Dar comida",
+};
+
+const cleanActivity = {
+  title: "¡Es hora del baño!",
+  activity: {
+    text: "Tiempo de baño",
+    type: "number",
+    placeholder: "Duración del baño en minutos",
+  },
+  registerTime: {
+    text: "Hora del baño",
+    type: "time",
+    placeholder: "Añade la hora del baño",
+  },
+  accept: "Dar baño",
+};
+
+const brushActivity = {
+  title: "¡Es momento para el cepillado!",
+  activity: {
+    text: "Duración del cepillado",
+    type: "number",
+    placeholder: "Duración del cepillado en minutos",
+  },
+  registerTime: {
+    text: "Hora del cepillado.",
+    type: "time",
+    placeholder: "Añade la hora del cepillado.",
+  },
+  accept: "Cepillar a tu mascota",
+};
+
+const walkActivity = {
+  title: "¡Vamos a dar un paseo!",
+  activity: {
+    text: "Duración del paseo",
+    type: "number",
+    placeholder: "Duración del paseo en minutos",
+  },
+  registerTime: {
+    text: "Hora del paseo",
+    type: "time",
+    placeholder: "Añade la hora del paseo.",
+  },
+  accept: "Dar paseo",
+};
+
 const apiUrl = getApiUrl()
 
 async function getApiData(endpoint, defaultValue) {
@@ -75,24 +135,28 @@ function generatePet(pet) {
           image="/dashboard/mascotas.svg"
           hoverImage="/dashboard/mascotas-white.svg"
           alt_text="añadir comida"
+          modalData={feedActivity}
         />
         <ActivityButton
           text="Añadir Baño"
           image="/dashboard/bano.svg"
           hoverImage="/dashboard/bano-white.svg"
           alt_text="añadir baño"
+          modalData={cleanActivity}
         />
         <ActivityButton
           text="Añadir Cepillado"
           image="/dashboard/cepillo.svg"
           hoverImage="/dashboard/cepillo-white.svg"
           alt_text="añadir cepillado"
+          modalData={brushActivity}
         />
         <ActivityButton
           text="Añadir Paseo"
           image="/dashboard/paseo.svg"
           hoverImage="/dashboard/paseo-white.svg"
           alt_text="añadir paseo"
+          modalData={walkActivity}
         />
       </div>
       <span className="text-xl text-balanpy-800 font-bold text-[24px] mb-2 mt-6">

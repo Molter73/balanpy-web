@@ -67,8 +67,8 @@ export default function Dashboard() {
                       <div className="flex items-center">
                         <div className="flex-shrink-0 h-10 w-10">
                           <img
-                            src="/dashboard/centro-veterinario.svg"
-                            alt="centro veterinario"
+                            src="/vet/logo-balanpy-vets.png"
+                            alt="Logo Balanpy Veterinarios"
                             className="h-10 w-10 rounded-full"
                           />
                         </div>
