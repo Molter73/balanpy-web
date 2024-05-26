@@ -17,13 +17,13 @@ const feedActivity = {
     type: "number",
     placeholder: "Cantidad de comida en gramos",
   },
-  secondaryActivity: {
+  registerTime: {
     text: "Hora de la comida",
     type: "time",
     placeholder: "Añade la hora de la comida",
   },
   accept: "Dar comida",
-}
+};
 
 const cleanActivity = {
   title: "¡Es hora del baño!",
@@ -32,7 +32,7 @@ const cleanActivity = {
     type: "number",
     placeholder: "Duración del baño en minutos",
   },
-  secondaryActivity: {
+  registerTime: {
     text: "Hora del baño",
     type: "time",
     placeholder: "Añade la hora del baño",
@@ -47,7 +47,7 @@ const brushActivity = {
     type: "number",
     placeholder: "Duración del cepillado en minutos",
   },
-  secondaryActivity: {
+  registerTime: {
     text: "Hora del cepillado.",
     type: "time",
     placeholder: "Añade la hora del cepillado.",
@@ -62,7 +62,7 @@ const walkActivity = {
     type: "number",
     placeholder: "Duración del paseo en minutos",
   },
-  secondaryActivity: {
+  registerTime: {
     text: "Hora del paseo",
     type: "time",
     placeholder: "Añade la hora del paseo.",

@@ -1,17 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
+import ReactDOM from "react-dom";
 
 export const ModalDateVet = ({ show, onClose }) => {
   const [date, setDate] = useState(new Date());
+  const [isVisible, setIsVisible] = useState(show);
+  const [animationClass, setAnimationClass] = useState("");
 
-  if (!show) {
-    return null;
-  }
+  useEffect(() => {
+    if (show) {
+      setIsVisible(true);
+      setTimeout(() => setAnimationClass("opacity-100 scale-100"), 10);
+    } else {
+      setAnimationClass("opacity-0 scale-95");
+      setTimeout(() => setIsVisible(false), 300);
+    }
+  }, [show]);
 
-  return (
-    <div className="fixed inset-0 flex items-center justify-center backdrop-blur-md">
-      <div className="relative bg-white rounded-2xl py-16 w-[800px] mx-4 flex flex-col items-center justify-center border-[3px] border-balanpy-800">
+  if (!isVisible) return null;
+
+  return ReactDOM.createPortal(
+    <div
+      className={`fixed inset-0 flex items-center justify-center backdrop-blur-md transition-opacity duration-300 ${animationClass}`}
+    >
+      <div
+        className={`relative bg-white rounded-2xl py-16 w-[800px] mx-4 flex flex-col items-center justify-center border-[3px] border-balanpy-800 transition-transform duration-300 transform ${animationClass}`}
+      >
         <button
           onClick={onClose}
           className="absolute top-4 right-4 bg-balanpy hover:bg-gray-300 text-white font-bold py-2 px-4 rounded-full focus:outline-none"
@@ -107,6 +122,7 @@ export const ModalDateVet = ({ show, onClose }) => {
           </div>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
 };

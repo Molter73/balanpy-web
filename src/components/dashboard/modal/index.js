@@ -1,33 +1,29 @@
-import React from "react";
-
-function secondActivity(data) {
-  if (!data.secondaryActivity) {
-    return <></>;
-  }
-  return (
-    <div className="mb-4 items-center">
-      <label className="block text-lg font-regular text-gray-700 text-center">
-        {data.secondaryActivity.text}
-      </label>
-      <input
-        type={data.secondaryActivity.type}
-        placeholder={data.secondaryActivity.placeholder}
-        className="mt-1 block w-full border border-gray-300 rounded-md text-center text-lg p-2 leading-5"
-      />
-    </div>
-  );
-}
+import React, { useState, useEffect } from "react";
+import ReactDOM from "react-dom";
 
 const Modal = ({ show, onClose, data }) => {
-  if (!show) {
-    return null;
-  }
+  const [isVisible, setIsVisible] = useState(show);
+  const [animationClass, setAnimationClass] = useState("");
 
-  const sActivity = secondActivity(data);
+  useEffect(() => {
+    if (show) {
+      setIsVisible(true);
+      setTimeout(() => setAnimationClass("opacity-100 scale-100"), 10);
+    } else {
+      setAnimationClass("opacity-0 scale-95");
+      setTimeout(() => setIsVisible(false), 300);
+    }
+  }, [show]);
 
-  return (
-    <div className="fixed inset-0 flex items-center justify-center backdrop-blur-md">
-      <div className="relative bg-white rounded-2xl py-16 w-[600px] mx-4 flex flex-col items-center justify-center border-[3px] border-balanpy-800">
+  if (!isVisible) return null;
+
+  return ReactDOM.createPortal(
+    <div
+      className={`fixed inset-0 flex items-center justify-center backdrop-blur-md transition-opacity duration-300 ${animationClass}`}
+    >
+      <div
+        className={`relative bg-white rounded-2xl py-16 w-[600px] mx-4 flex flex-col items-center justify-center border-[3px] border-balanpy-800 transition-transform duration-300 transform ${animationClass}`}
+      >
         <button
           onClick={onClose}
           className="absolute top-4 right-4 bg-balanpy hover:bg-gray-300 text-white font-bold py-2 px-4 rounded-full focus:outline-none"
@@ -57,7 +53,16 @@ const Modal = ({ show, onClose, data }) => {
               className="mt-1 block w-full p-2 border border-gray-300 rounded-md text-center"
             />
           </div>
-          {sActivity}
+          <div className="mb-4 items-center">
+            <label className="block text-lg font-regular text-gray-700 text-center">
+              {data.registerTime.text}
+            </label>
+            <input
+              type={data.registerTime.type}
+              placeholder={data.registerTime.placeholder}
+              className="mt-1 block w-full border border-gray-300 rounded-md text-center text-lg p-2 leading-5"
+            />
+          </div>
         </div>
         <div className="mb-6">
           <label className="block text-lg font-regular text-gray-700 text-center">
@@ -71,14 +76,15 @@ const Modal = ({ show, onClose, data }) => {
         <div className="text-center">
           <button
             onClick={onClose}
-            className="text-primary bg-balanpy hover:bg-white hover:text-balanpy text-[18px] py-2 px-4 font-poppins font-medium rounded-[5px] outline-none border-4 border-balanpy box-border transition-all duration-300 ease-in-out "
+            className="text-primary bg-balanpy hover:bg-white hover:text-balanpy text-[18px] py-2 px-4 font-poppins font-medium rounded-[5px] outline-none border-4 border-balanpy box-border transition-all duration-300 ease-in-out"
           >
             {data.accept}
           </button>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body
   );
-}
+};
 
 export default Modal;

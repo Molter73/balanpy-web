@@ -12,13 +12,13 @@ export default function ActivityButton({ text, image, hoverImage, alt_text, moda
 
   return (
     <div className="flex flex-col items-center justify-center align-center p-4">
-      <div
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-        onClick={toggleModal}
-        className="flex flex-col items-center justify-center align-center p-4 cursor-pointer"
-      >
-        <div className="border rounded-xl border-balanpy-800 bg-balanpy-50 p-3 h-[64px] w-[64px] mb-2 hover:bg-balanpy-800 transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-slate-300 flex items-center justify-center">
+      <div className="flex flex-col items-center justify-center align-center p-4">
+        <div
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+          onClick={toggleModal}
+          className="border rounded-xl border-balanpy-800 bg-balanpy-50 p-3 h-[64px] w-[64px] mb-2 hover:bg-balanpy-800 transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-slate-300 flex items-center justify-center cursor-pointer"
+        >
           <img
             src={isHovered ? hoverImage : image}
             alt={alt_text}
@@ -29,7 +29,12 @@ export default function ActivityButton({ text, image, hoverImage, alt_text, moda
         </div>
       </div>
       <span className="text-black font-regular text-[14px]">{text}</span>
-      <Modal show={showModal} onClose={toggleModal} data={modalData} />
+      <Modal
+        show={showModal}
+        onClose={toggleModal}
+        data={modalData}
+        className="transition-all duration-300 ease-in-out"
+      />
     </div>
   );
 }
