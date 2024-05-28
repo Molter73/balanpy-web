@@ -6,19 +6,19 @@ import { fieldsFormLogin } from "@/constants/form";
 
 export default function Login() {
   return (
-    <main className="flex items-center justify-center p-8 min-h-screen bg-gradient-to-b from-balanpy via-balanpy-800 to-balanpy-900">
-      <div className="flex flex-row p-10 rounded-3xl w-3/5 h-3/5 bg-white">
-        <div className="flex-none border-r-2 p-5 content-center border-primary">
+    <main className="flex items-center justify-center p-8 min-h-screen bg-gradient-to-b from-balanpy-400 via-balanpy-700 to-balanpy-900">
+      <div className="flex flex-row p-10 rounded-[40px] w-[1080px] h-[550px] bg-white">
+        <div className="flex-none border-r-2 p-5 content-center border-primary w-1/2">
           <Image
             src="/login/login-image.png"
             alt="Puppy login"
-            width={256}
-            height={256}
+            width={456}
+            height={456}
             className="object-cover"
           />
         </div>
-        <div className="flex-auto items-center justify-center p-8 w-60 h-68">
-          <div className="flex p-1.5 justify-center mb-10">
+        <div className="flex-auto h-full items-center justify-center p-4 px-10 w-60">
+          <div className="flex p-1.5 justify-center mb-4">
             <Image
               src="/home/logo-balanpy.png"
               alt="Logo Balanpy"

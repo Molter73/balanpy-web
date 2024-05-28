@@ -13,7 +13,7 @@ export default function Navbar() {
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
-            className={`font-poppins
+            className={`
             font-medium cursor-pointer text-[18px] hover:text-balanpy ${
               index === navLinks.length - 1 ? "mr-0" : "mr-10"
             } text-black`}

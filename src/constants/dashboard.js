@@ -1,34 +1,14 @@
-export const feed_activity = {
-    src: "/dashboard/food.svg",
-    alt: "comida",
-    background: "bg-balanpy-800",
-}
-
-export const feed_state = {
-    text: "Completado",
-    background: "bg-balanpy-700",
-}
-
-export const incomplete_activity = {
+export const incompleteActivity = {
+  icon: {
     src: "/dashboard/question.svg",
     alt: "actividad incompleta",
     background: "bg-gray-500",
-}
-
-export const incomplete_state = {
-    text: "No History",
-    background: "bg-gray-500",
-}
-
-export const dog_icon = {
-    src: "/dashboard/dog.svg",
-    alt: "perro",
-}
-
-export const cat_icon = {
-    src: "/dashboard/cat.svg",
-    alt: "gato",
-}
+  },
+  type: "-",
+  time: "-",
+  info: "-",
+  state: "No History",
+};
 
 export const months = [
     "Jan", "Feb", "Mar", "Apr",
@@ -38,7 +18,7 @@ export const months = [
 
 export const navigation = [
     {
-        href: "#dashboard",
+        href: "/dashboard",
         text: "Dashboard",
         image: {
             src: "/dashboard/dashboard.svg",
@@ -54,7 +34,7 @@ export const navigation = [
         },
     },
     {
-        href: "#veterinarios",
+        href: "/dashboard/vet",
         text: "Veterinarios",
         image: {
             src: "/dashboard/veterinarios.svg",
@@ -62,7 +42,7 @@ export const navigation = [
         },
     },
     {
-        href: "#tus-citas",
+        href: "/dashboard/dates",
         text: "Tus Citas",
         image: {
             src: "/dashboard/tus-citas.svg",
@@ -70,7 +50,7 @@ export const navigation = [
         },
     },
     {
-        href: "#ajustes",
+        href: "/dashboard/settings",
         text: "Ajustes",
         image: {
             src: "/dashboard/ajustes.svg",

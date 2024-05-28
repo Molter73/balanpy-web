@@ -1,19 +1,28 @@
-import ActivityRow from "@/components/dashboard/activity-row"
+import ActivityRow from "@/components/dashboard/activity-row";
+import { incompleteActivity } from "@/constants/dashboard";
 
-import {
-    feed_activity,
-    feed_state,
-    incomplete_activity,
-    incomplete_state,
-} from "@/constants/dashboard"
+const ActivityList = ({ activities }) => {
+  while (activities.length < 4) {
+    activities.push(incompleteActivity)
+  }
 
-export default function Activities() {
-    return (
-        <>
-            <h2 className="text-gray-400 font-semibold text-3xl p-1">Actividades recientes</h2>
-            <ActivityRow icon={feed_activity} type="Comida" time="4:48:24 PM" info="400 gr" state={feed_state} />
-            <ActivityRow icon={incomplete_activity} type="-" time="-" info="-" state={incomplete_state} />
-            <ActivityRow icon={incomplete_activity} type="-" time="-" info="-" state={incomplete_state} />
-        </>
-    )
-}
+  return (
+    <>
+      <h2 className="text-gray-400 font-medium text-3xl p-2">
+        Actividades recientes
+      </h2>
+      {activities.map((activity, index) => (
+        <ActivityRow
+          key={index}
+          icon={activity.icon}
+          type={activity.type}
+          time={activity.time}
+          info={activity.info}
+          state={activity.state}
+        />
+      ))}
+    </>
+  );
+};
+
+export default ActivityList;
