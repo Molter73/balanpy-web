@@ -1,81 +1,95 @@
 import Check from "@/components/pets/check";
-import Input from "@/components/pets/input";
-import Button1 from "@/components/pets/Steps";
-import { Button2 } from "@/components/pets/Steps";
-import { LabelPets } from "@/constants/const-labelPets";
-import { InputRow } from "@/components/pets/inputRow";
-import { ButtonPrimary, ButtonSecondary } from "@/components/home/Button";
+import Input from "@/components/register/Input"
+import Label from "@/components/register/Label";
+import Steps from "@/components/pets/Steps";
+import { fieldsFormPetsEat, fieldsFormPetsHig } from "@/constants/form";
+import { ButtonPrimary, ButtonSecondary } from "@/components/Button";
+import styles from "../style";
+import Container from "@/components/container";
+
 export default function Home() {
   return (
-  //BLOQUE PRINCIPAL DE COMPONENTES Y COLOR DE FONDO
+    //BLOQUE PRINCIPAL DE COMPONENTES Y COLOR DE FONDO
     <main className="justify-items-center grid grid-cols-1 p-20 min-h-screen bg-gradient-to-b from-balanpy-500 from-20% via-balanpy-700 via-65% to-balanpy-900 to-100%">
-      
       <div className="justify-center">
         <div className="flex justify-center w-auto p-1">
-          <img src="pets/LogoBalanpyBlanco.png" alt="Balanpy Logo" width={60} height={60}></img>
+          <img src="pets/LogoBalanpyBlanco.png" alt="Balanpy Logo" width={120} height={120}></img>
         </div>
         <div className="flex justify-center p-4">
-          <h1 className="font-poppins font-bold text-7xl text-white text-center">Registra a tu mascota</h1>
+          <h1 className={`${styles.heading2} text-white text-center`}>
+            Registra a tu mascota
+          </h1>
         </div>
       </div>
-      
-      <section className="flex justify-center items-center mx-auto my-20 grid-cols-4 gap-40 bg-white rounded-full max-w-screen-md h-4">
-        <Button2 index="1" href="/register" />
-        <Button1 index="2" href="/register2" />
-        <Button2 index="3" />
-        <Button2 index="4" />
+
+      <section className="flex justify-center items-center m-10 grid-cols-4 gap-40 bg-white rounded-full max-w-screen-md h-[3px]">
+        <Steps index="1" />
+        <Steps index="2" styles={"bg-balanpy-800 text-white"} />
+        <Steps index="3" />
+        <Steps index="4" />
       </section>
-      
-      <section className="flex justify-center max-w-screen-xl">
-        <div className="p-12 mx-auto rounded-2xl w-full bg-white">
-          <div className="m-auto">
-            <p className="text-balanpy-800 font-poppins font-bold text-5xl text-center">Rellena el siguiente cuestionario</p>
-          </div>
-          
-          <div className="justify-center my-12 grid grid-cols-2 gap-8">
-            <div className="border-balanpy-800 border-4 rounded-2xl mx-auto">
-              <p className="text-balanpy-800 font-poppins text-4xl text-center m-4">Comida</p>
-              <div className="grid grid-cols-3 place-items-center mx-auto p-12">
-                <Input text="¿Cuantas veces come tu mascota?" placeholder="Introduce un valor"></Input>
-                <Input text="¿Que cantidad come cada vez?" placeholder="Introduce un valor"></Input>
-                <Input text="¿Cuanto pesa tu mascota?" placeholder="Introduce un valor"></Input> 
-                <Input text="1ª Comida" placeholder="Introduce un valor"></Input>
-                <Input text="2ª Comida" placeholder="Introduce un valor"></Input>
-                <Input text="3ª Comida" placeholder="Introduce un valor"></Input>
-              </div>
-              <div className="relative h-28">
-                <div className="absolute bottom-0 left-8 p-4">
-                  <p className="text-2xl text-center font-poppins mx-2">¿Quieres que te notifiquemos cuando le toque su comida?</p>
-                  <Check />
-                </div>
-              </div>
-            </div>
+
+      <section className={`${styles.paddingX} ${styles.flexCenter} m-5`} >
+        <div className={`${styles.boxWidthPets} p-10 mx-auto rounded-2xl w-full bg-white`}>
+          <div className="flex justify-center">
             
-            <div className="border-balanpy-800 border-4 rounded-2xl m-auto">
-              <p className="text-balanpy-800 font-poppins text-4xl text-center m-4">Higiene</p>
-              <div className="grid grid-cols-3 place-items-center mx-auto p-8">
-                <Input text="¿Cada cuanto bañas a tu mascota?" placeholder="Nombre"></Input>
-                <Input text="¿Cada cuanto la cepillas?" placeholder="Raza"></Input>
-                <Input text="¿Cada cuanto la desparacitas?" placeholder="Fecha"></Input>
-                <Input text="Fecha del ultimo baño de tu mascota" placeholder="Introduce un valor"></Input>
-                <Input text="Fecha del ultimo cepillado" placeholder="Introduce un valor"></Input>
-                <Input text="Fecha de la ultima desparacitacion" placeholder="Introduce un valor"></Input> 
-              </div> 
-              <div className="relative h-28">
-                <div className="absolute bottom-0 left-8 p-4">
-                  <p className="text-2xl text-center font-poppins mx-2">¿Quieres que te notifiquemos cuando le toque cualquier elemento de la higiene de tu mascota?</p>
-                  <Check />
-
-                </div>
+            <Container styles={"mr-10"}>
+              <div className="text-center">
+                <p className={`${styles.heading3} text-balanpy-800 text-center m-6`}>Comida</p>
               </div>
-            </div>
-          </div>
+              <div className="flex flex-row text-nowrap">
+                {fieldsFormPetsEat.slice(0, 3).map((field) => (
+                  <div key={field.id} className="flex flex-col w-full px-4 py-4">
+                    <Label text={field.labelText} htmlFor={field.id} />
+                    <Input id={field.id} placeholder={field.placeholder} />
+                  </div>
+                ))}
+              </div>
+              <div className="flex flex-row text-nowrap ">
+                {fieldsFormPetsEat.slice(3, 6).map((field) => (
+                  <div key={field.id} className="flex flex-col w-full px-2 py-4">
+                    <Label text={field.labelText} htmlFor={field.id} />
+                    <Input id={field.id} placeholder={field.placeholder} />
+                  </div>
+                ))}
+              </div>
+              <div className="flex flex-row text-nowrap">
+                <Check></Check>
+                <p className="content-center mx-2">¿Quieres que te notifiquemos cuando le toque su comida?</p>
+              </div>       
+            </Container>
 
-          <div className="flex justify-center my-5">
-            <ButtonSecondary styles={"mx-10"} text={"Cancelar"} href="" />
-            <ButtonPrimary styles={"mx-10"} text={"Continuar"} href="" />
+            <Container>
+              <div>
+                <p className={`${styles.heading3} text-balanpy-800 text-center m-6`}>Higiene</p>
+              </div>
+              <div className="flex flex-row text-nowrap">
+                {fieldsFormPetsHig.slice(0, 3).map((field) => (
+                  <div key={field.id} className="flex flex-col w-full px-4 py-8">
+                    <Label text={field.labelText} htmlFor={field.id} />
+                    <Input id={field.id} placeholder={field.placeholder} />
+                  </div>
+                ))}
+              </div>
+              <div className="flex flex-row text-nowrap">
+                {fieldsFormPetsHig.slice(3, 6).map((field) => (
+                  <div key={field.id} className="flex flex-col w-full px-4 py-8">
+                    <Label text={field.labelText} htmlFor={field.id} />
+                    <Input id={field.id} placeholder={field.placeholder} />
+                  </div>
+                ))}
+              </div>
+              <div className="flex flex-row text-nowrap">
+                <Check></Check>
+                <p className="content-center mx-2">¿Quieres que te notifiquemos cuando le toque cualquier elemento de la higiene de tu mascota?</p>
+              </div>
+              
+            </Container>
           </div>
-
+          <div className="flex justify-center mt-8 gap-6 ">
+            <ButtonSecondary styles={"text-[16px]"} text={"Cancelar"} href="/addPetStep1" />
+            <ButtonPrimary styles={"text-[16px]"} text={"Continuar"} href="/addPetStep3"/>
+          </div>
         </div>
       </section>
     </main>

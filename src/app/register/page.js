@@ -10,17 +10,10 @@ export default function RegisterUser(){
     return (
       <main className="flex flex-col items-center justify-center p-8 min-h-screen bg-gradient-to-b from-balanpy-400 via-balanpy-700 to-balanpy-900">
         <div className="flex justify-center items-center mb-5">
-          <Image
-            src="/logo-white-image.png"
-            alt="Balanpy Logo"
-            width={100}
-            height={100}
-          />
+          <Image src="/logo-white-image.png" alt="Balanpy Logo" width={100} height={100}/>
         </div>
         <div className="mt-1">
-          <h2
-            className={`${styles.heading3} font-bold text-[30px] text-white text-center mb-10`}
-          >
+          <h2 className={`${styles.heading3} font-bold text-[30px] text-white text-center mb-10`}>
             Completa el Registro
           </h2>
         </div>
@@ -63,16 +56,8 @@ export default function RegisterUser(){
           </div>
 
           <div className="flex flex-row justify-center gap-3 w-full mt-2">
-            <ButtonSecondary
-              text={"Cancelar"}
-              href="/"
-              styles={"text-[16px]"}
-            />
-            <ButtonPrimary
-              text={"Regístrate"}
-              href="/dashboard"
-              styles={"text-[16px]"}
-            />
+            <ButtonSecondary text={"Cancelar"} href="/" styles={"text-[16px]"}/>
+            <ButtonPrimary text={"Regístrate"} href="/addPetStep1" styles={"text-[16px]"}/>
           </div>
         </div>
       </main>
