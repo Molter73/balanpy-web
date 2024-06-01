@@ -1,5 +1,5 @@
 
-import Container from "@/components/dashboard/container"
+import Container from "@/components/container"
 import DashboardLayout from "@/components/dashboard/layout"
 import Input from "@/components/register/Input";
 import { ButtonPrimary, ButtonSecondary } from "@/components/Button";

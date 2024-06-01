@@ -31,14 +31,14 @@ export default function Home() {
         <Steps index="4" />
       </section>
 
-      
+
       <section className={`${styles.flexCenter} my-4 max-w-[1900px]`}>
-        
+
         <div className={`${styles.boxWidthPets} px-10 pb-10 rounded-2xl w-full bg-white`}>
           <div className={`${styles.padding} ${styles.flexCenter}`}>
               <p className={`${styles.heading3} text-center font-bold`}>Unos pasos más y terminamos</p>
           </div>
-          
+
           <div className="flex justify-center">
             <Container styles={"ml-auto mr-4"}>
               <div className="flex">
@@ -59,10 +59,10 @@ export default function Home() {
               <div className="flex flex-row text-nowrap">
                 <Check/>
                 <p className="content-center mx-2">¿Quieres que te notifiquemos cuando le toque su paseo?</p>
-              </div>    
+              </div>
             </Container>
 
-            <Container styles={"bg-balanpy-800 mr-auto ml-4"}>
+            <Container styles={"mr-auto ml-4"} bg_color="bg-balanpy-800" >
               <div className="flex">
                 <p className={`${styles.heading3} text-white text-center m-6 text-nowrap`}>Sube los siguientes archivos</p>
               </div>
@@ -80,5 +80,5 @@ export default function Home() {
       </section>
     </main>
   );
-  
+
 }
