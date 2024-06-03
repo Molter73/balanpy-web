@@ -1,6 +1,8 @@
 export const styles = {
   boxWidth: "xl:max-w-[1280px] w-full",
 
+  boxWidthPets: "xl:max-w-4/5 w-full",
+
   heading1:
     "font-poppins font-bold xs:text-[80px] text-[52px] text-balanpy xs:leading-[76.8px] leading-[66.8px] w-full",
 
@@ -8,10 +10,10 @@ export const styles = {
     "font-poppins font-semibold xs:text-[62px] text-[70px] xs:leading-[60px] leading-[52px] w-full",
 
   heading3:
-    "font-poppins font-semibold xs:text-[44px] text-[32px] text-black xs:leading-[50px] leading-[42px] w-full",
+    "font-poppins font-semibold xs:text-[44px] text-[32px] xs:leading-[50px] leading-[42px] w-full",
 
   heading4:
-    "font-poppins font-semibold xs:text-[20px] text-[40px] text-black xs:leading-[24px] leading-[70px] w-full",
+    "font-poppins font-semibold xs:text-[20px] text-[40px] xs:leading-[24px] leading-[70px] w-full",
 
   paragraph: "font-poppins font-medium text-black text-[16px] leading-[28px]",
 

@@ -1,6 +1,6 @@
 "use client"
 import { useState } from "react"
-import Container from "@/components/dashboard/container"
+import Container from "@/components/container"
 import DashboardLayout from "@/components/dashboard/layout"
 import { vetCenters } from "@/constants/vet";
 export default function Dashboard() {
@@ -26,7 +26,7 @@ export default function Dashboard() {
     )
 
     const currentVetLow = currentPage * itemsPerPage + 1;
-    
+
     const currentVetHigh = Math.min(
       (currentPage + 1) * itemsPerPage,
       vetCenters.length

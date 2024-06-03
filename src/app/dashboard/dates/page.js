@@ -1,6 +1,6 @@
 "use client"
 import { useState } from "react";
-import Container from "@/components/dashboard/container";
+import Container from "@/components/container";
 import DashboardLayout from "@/components/dashboard/layout";
 import { ModalDateVet } from "@/components/dashboard/modalDateVet";
 
@@ -14,7 +14,7 @@ export default function Dashboard() {
   return (
     <DashboardLayout className="h-full bg-balanpy-50">
       <div className="text-black p-6 bg-balanpy-50 grid gap-4 grid-cols-5 grid-rows-1">
-        <Container styles="col-span-5 items-center justify-center px-[80px] py-14">
+        <Container styles="bg-white col-span-5 items-center justify-center px-[80px] py-14">
           <img
             src="/dashboard/usuario.png"
             alt="Perfil de Usuario"

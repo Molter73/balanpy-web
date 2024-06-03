@@ -10,3 +10,5 @@ export const Label = ({ htmlFor, text }) => {
         </label>
     );
 }
+
+export default Label;

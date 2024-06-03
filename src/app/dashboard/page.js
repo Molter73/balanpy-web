@@ -2,7 +2,7 @@ import ActivityButton from "@/components/dashboard/activity-button"
 import InformationButton from "@/components/dashboard/information-button"
 import Pet from "@/components/dashboard/pet"
 import PetInfo from "@/components/dashboard/pet-info"
-import Container from "@/components/dashboard/container"
+import Container from "@/components/container"
 import WeatherInfo from "@/components/dashboard/weather-info"
 import ActivityList from "@/components/dashboard/activities";
 import DashboardLayout from "@/components/dashboard/layout"
