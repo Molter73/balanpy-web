@@ -1,5 +1,4 @@
 import { LabelTertiary } from "@/components/register/Label";
-import { sansa, simba } from "@/constants/form";
 import Image from "next/image";
 import Container from "@/components/container";
 import { ButtonSecondary } from "@/components/Button";
@@ -7,7 +6,6 @@ import ActivityButton from "../activity-button";
 import { feedActivity, cleanActivity, brushActivity, walkActivity } from "@/constants/modal"
 
 export default function YourPets({pet}){
-    console.log('Pet info: ', pet)
     return(
         <Container styles="grid grid-cols-2 justify-center p-4">
             <div className="flex items-center justify-center border-r-2 p-4 border-gray-200">

@@ -6,10 +6,9 @@ export default function Dashboard() {
     return (
       <DashboardLayout className="h-full bg-balanpy-50">
         <div className="justify-center items-center p-6 bg-balanpy-50 space-y-6">
-                {fieldsYourPets.map((pet, index) => {
-                  console.log('Rendering pet: ', pet);
-                  return <YourPets key={index} pet={pet}/>;
-                })}
+                {fieldsYourPets.map((pet, index) => (
+                  <YourPets key={index} pet={pet}/>
+                ))}
         </div>
       </DashboardLayout>
     );

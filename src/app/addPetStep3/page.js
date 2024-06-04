@@ -1,5 +1,5 @@
 import Input from "@/components/register/Input"
-import Label from "@/components/register/Label";
+import { Label } from "@/components/register/Label";
 import Steps from "@/components/pets/Steps";
 import {fieldsFormPetsWalk} from "@/constants/form";
 import { ButtonPrimary, ButtonSecondary } from "@/components/Button";

@@ -1,13 +1,6 @@
-import Input from "@/components/register/Input"
-import Label from "@/components/register/Label";
 import Steps from "@/components/pets/Steps";
-import {fieldsFormPetsWalk} from "@/constants/form";
-import { ButtonPrimary, ButtonSecondary } from "@/components/Button";
+import { ButtonPrimary } from "@/components/Button";
 import styles from "../style";
-import Container from "@/components/container";
-import FileUp from "@/components/pets/FileUp";
-import Check from "@/components/pets/check";
-import Graph from "@/components/pets/Graph";
 
 export default function Home() {
   return (
