@@ -26,7 +26,7 @@ export const navigation = [
         },
     },
     {
-        href: "#tus-mascotas",
+        href: "/dashboard/your-pets",
         text: "Tus mascotas",
         image: {
             src: "/dashboard/mascotas.svg",

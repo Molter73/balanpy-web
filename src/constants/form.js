@@ -85,6 +85,39 @@ export const fieldsFormLogin = [
     }
 ]
 
+export const sansa = {
+  nombre: 'Sansa',
+  raza: 'Bulldog Inglés',
+  nacimiento: '08/08/2022',
+  sexo: 'Hembra',
+  color: 'Marrón y Blanco',
+  esterilizado: 'Si',
+  chip: '111957017345544',
+  image: {
+    src:'/dashboard/pet.png',
+    alt: 'Pet photo',
+  }
+}
+
+export const simba = {
+  nombre: 'Simba',
+  raza: 'Ocicat',
+  nacimiento:'31/04/2023',
+  sexo: 'Hembra',
+  color:'Naranja y Blanco',
+  esterilizado: 'Si',
+  chip:'941222203103491',
+  image:{
+    src:'/dashboard/ocigato.jpg',
+    alt:'Cat photo',
+  }
+}
+
+export const fieldsYourPets = [
+  sansa,
+  simba
+]
+
 export const fieldsFormPets = [
   {
     id: "fieldPets-01",
@@ -136,7 +169,7 @@ export const fieldsFormPetsRow = [
     title: "Enfermedades",
     text: "Introduce las enfermedades",
   },
-  
+
 ];
 
 export const fieldsFormPetsEat = [
@@ -169,7 +202,7 @@ export const fieldsFormPetsEat = [
     id: "fieldPetsEat-06",
     labelText: "3ª Comida",
     placeholder: "Introduce valor",
-  }, 
+  },
 ];
 
 export const fieldsFormPetsHig = [
