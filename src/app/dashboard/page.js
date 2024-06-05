@@ -36,16 +36,16 @@ async function getActivities() {
 
 function noPet() {
   return (
-    <Container styles="col-span-4 items-center justify-center px-24 py-10">
+    <div className="flex flex-col col-span-4 items-center justify-center px-24">
       <img
         src="/dashboard/usuario.png"
         alt="Perfil de Usuario"
         className="w-[200px] h-[200px]"
       />
-      <h2 className="font-medium text-[40px] text-center text-balanpy-800 mb-4 leading-10">
+      <h2 className="font-bold text-[40px] text-center text-balanpy-800 mb-4 leading-10">
         ¡Registra a tu primera Mascota!
       </h2>
-      <span className="font-medium text-[22px] text-balanpy-800 text-center">
+      <span className="font-medium text-[22px] text-balanpy-800 text-center w-2/3">
         Registra a tu primer amigo peludo en Balanpy y empieza a disfrutar
         de un manejo más fácil y efectivo de su bienestar. ¡Dale a tu
         mascota el amor y la atención que merece hoy mismo!
@@ -55,7 +55,7 @@ function noPet() {
         text={"Registra tu primera mascota"}
         href="/login"
       />
-    </Container>
+    </div>
   )
 }
 
