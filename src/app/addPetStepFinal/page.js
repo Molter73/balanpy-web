@@ -48,9 +48,11 @@ export default function Home() {
             </p>
           </div>
           <div className="flex justify-center m-10 gap-6 ">
-            <button className="py-4 px-10 font-poppins font-medium text-[24px] rounded-[10px] outline-none border-4 border-balanpy-800 box-border transition-all duration-300 ease-in-out text-primary bg-balanpy-800 hover:bg-white hover:text-balanpy-800">
-              Vuelve al Panel de Control
-            </button>
+            <a href="/dashboard">
+              <button className="py-4 px-10 font-poppins font-medium text-[24px] rounded-[10px] outline-none border-4 border-balanpy-800 box-border transition-all duration-300 ease-in-out text-primary bg-balanpy-800 hover:bg-white hover:text-balanpy-800">
+                Vuelve al Panel de Control
+              </button>
+            </a>
           </div>
         </div>
       </section>
