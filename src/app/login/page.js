@@ -10,18 +10,13 @@ import { ButtonSecondary } from "@/components/Button";
 const HARDCODED_PASSWORD = "12345";
 
 export default function Login() {
-  const [formData, setFormData] = useState({ email: "", password: "" });
   const [error, setError] = useState("");
   const router = useRouter();
 
-  const handleChange = (e) => {
-    const { id, value } = e.target;
-    setFormData((prevData) => ({ ...prevData, [id]: value }));
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (formData.password !== HARDCODED_PASSWORD) {
+
+    if (e.target.password.value !== HARDCODED_PASSWORD) {
       setError("Contraseña incorrecta. Inténtalo de nuevo.");
     } else {
       setError("");
@@ -57,8 +52,6 @@ export default function Login() {
                 <Input
                   id={field.id}
                   placeholder={field.placeholder}
-                  value={formData[field.id]}
-                  onChange={handleChange}
                   type={field.id === "password" ? "password" : "text"}
                 />
               </div>
