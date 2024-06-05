@@ -20,7 +20,7 @@ export default function YourPets({pet}){
             />
           </div>
           <div className="w-full items-center px-6 col-span-3">
-            <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-1">
               <LabelTertiary
                 text="Nombre:"
                 htmlFor="name-pet"
@@ -56,6 +56,14 @@ export default function YourPets({pet}){
                 htmlFor="chip-pet"
                 value={pet.chip}
               />
+            </div>
+            <div className="flex flex-row align-center justify-center items-center bg-balanpy-800 rounded-full py-2 px-12 mt-6 cursor-pointer hover:bg-balanpy-900 transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-slate-300 ">
+              <img src="/dashboard/paw.svg" alt="huella" />
+              <a href="/dashboard/edit-pet">
+                <span className="text-balanpy-50 p-1 font-bold text-xl ml-4">
+                  EDITAR INFORMACIÓN
+                </span>
+              </a>
             </div>
           </div>
         </div>
@@ -101,17 +109,17 @@ export default function YourPets({pet}){
               </div>
             </div>
             <div className="grid grid-rows-2 justify-center mt-4">
-                <div className="grid grid-cols-4 justify-items-center text-center">
+              <div className="grid grid-cols-4 justify-items-center text-center">
                 <InformationButton text="Visualizar DNI Mascota" />
                 <InformationButton text="Visualizar Pedigree" />
                 <InformationButton text="Visualizar Esterilizado" />
                 <InformationButton text="Visualizar Archivo PPP" />
-                </div>
-                <div className="grid grid-cols-3 justify-items-center text-center">
+              </div>
+              <div className="grid grid-cols-3 justify-items-center text-center">
                 <InformationButton text="Historial de Alergias" />
                 <InformationButton text="Historial de Vacunas" />
                 <InformationButton text="Historial de Enfermedades" />
-                </div>
+              </div>
             </div>
           </div>
         </div>
