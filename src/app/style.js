@@ -17,6 +17,8 @@ export const styles = {
 
   paragraph: "font-poppins font-medium text-black text-[16px] leading-[28px]",
 
+  simpleText: "font-poppins font-medium text-black text-[13px] leading-loose traking-2",
+
   flexCenter: "flex justify-center items-center",
   flexStart: "flex justify-center items-start",
 

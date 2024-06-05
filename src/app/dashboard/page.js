@@ -7,68 +7,10 @@ import WeatherInfo from "@/components/dashboard/weather-info"
 import ActivityList from "@/components/dashboard/activities";
 import DashboardLayout from "@/components/dashboard/layout"
 import { ButtonPrimary } from "@/components/Button"
+import { feedActivity, cleanActivity, brushActivity, walkActivity } from "@/constants/modal"
 
 import { getApiUrl } from "@/config"
-
-const feedActivity = {
-  title: "¡Es hora de darle de comer a tu mascota!",
-  activity: {
-    text: "Cantidad comida",
-    type: "number",
-    placeholder: "Cantidad de comida en gramos",
-  },
-  registerTime: {
-    text: "Hora de la comida",
-    type: "time",
-    placeholder: "Añade la hora de la comida",
-  },
-  accept: "Dar comida",
-};
-
-const cleanActivity = {
-  title: "¡Es hora del baño!",
-  activity: {
-    text: "Tiempo de baño",
-    type: "number",
-    placeholder: "Duración del baño en minutos",
-  },
-  registerTime: {
-    text: "Hora del baño",
-    type: "time",
-    placeholder: "Añade la hora del baño",
-  },
-  accept: "Dar baño",
-};
-
-const brushActivity = {
-  title: "¡Es momento para el cepillado!",
-  activity: {
-    text: "Duración del cepillado",
-    type: "number",
-    placeholder: "Duración del cepillado en minutos",
-  },
-  registerTime: {
-    text: "Hora del cepillado.",
-    type: "time",
-    placeholder: "Añade la hora del cepillado.",
-  },
-  accept: "Cepillar a tu mascota",
-};
-
-const walkActivity = {
-  title: "¡Vamos a dar un paseo!",
-  activity: {
-    text: "Duración del paseo",
-    type: "number",
-    placeholder: "Duración del paseo en minutos",
-  },
-  registerTime: {
-    text: "Hora del paseo",
-    type: "time",
-    placeholder: "Añade la hora del paseo.",
-  },
-  accept: "Dar paseo",
-};
+import Link from "next/link"
 
 const apiUrl = getApiUrl()
 
@@ -244,16 +186,14 @@ export default async function Dashboard() {
                 cantidad={pet.cantidad}
               />
             ))}
-            <div className="flex flex-row w-full align-middle justify-center items-center bg-balanpy-800 rounded-full py-2 px-3 mt-10 cursor-pointer hover:bg-balanpy-900 transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-slate-300 ">
-              <img
-                src="/dashboard/paw.svg"
-                alt="huella"
-                className="w-[18px] h-[18px] mr-2"
-              />
-              <span className="text-balanpy-50 py-1 font-bold text-md">
-                Añadir Mascota
-              </span>
-            </div>
+            <Link href="/dashboard/edit-pet" className="no-underline">
+              <div className="flex flex-row align-center justify-center items-center bg-balanpy-800 rounded-full py-2 px-12 mt-10 cursor-pointer hover:bg-balanpy-900 transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-slate-300">
+                <img src="/dashboard/paw.svg" alt="huella" />
+                <span className="text-balanpy-50 p-1 font-bold text-xl ml-4">
+                  EDITAR INFORMACIÓN
+                </span>
+              </div>
+            </Link>
           </div>
         </Container>
       </div>
