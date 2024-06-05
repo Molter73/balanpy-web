@@ -65,64 +65,68 @@ function generatePet(pet) {
     return noPet()
   }
 
-  return <>
-    <PetInfo image={pet.image} status={pet.status} />
-    <div className="flex flex-col text-center justify-center items-center col-span-3 h-full">
-      <span className=" text-balanpy-800 font-bold text-[24px] mb-2">
-        ¿Qué quieres hacer ahora?
-      </span>
-      <div className="flex flex-row justify-center items-center">
-        <ActivityButton
-          text="Añadir Comida"
-          image="/dashboard/mascotas.svg"
-          hoverImage="/dashboard/mascotas-white.svg"
-          alt_text="añadir comida"
-          modalData={feedActivity}
-        />
-        <ActivityButton
-          text="Añadir Baño"
-          image="/dashboard/bano.svg"
-          hoverImage="/dashboard/bano-white.svg"
-          alt_text="añadir baño"
-          modalData={cleanActivity}
-        />
-        <ActivityButton
-          text="Añadir Cepillado"
-          image="/dashboard/cepillo.svg"
-          hoverImage="/dashboard/cepillo-white.svg"
-          alt_text="añadir cepillado"
-          modalData={brushActivity}
-        />
-        <ActivityButton
-          text="Añadir Paseo"
-          image="/dashboard/paseo.svg"
-          hoverImage="/dashboard/paseo-white.svg"
-          alt_text="añadir paseo"
-          modalData={walkActivity}
-        />
-      </div>
-      <span className="text-balanpy-800 font-bold text-[24px] mb-2 mt-6">
-        ¿Qué información necesitas?
-      </span>
-      <div className="flex flex-row justify-center items-center p-2">
-        <InformationButton text="Visualizar DNI Mascota" />
-        <InformationButton text="Visualizar Pedigree" />
-        <InformationButton text="Visualizar Esterilizado" />
-        <InformationButton text="Visualizar Archivo PPP" />
-      </div>
-      <div className="flex flex-row justify-center items-center mt-1">
-        <InformationButton text="Historial de Alergias" />
-        <InformationButton text="Historial de Vacunas" />
-        <InformationButton text="Historial de Enfermedades" />
-      </div>
-      <div className="flex flex-row align-center justify-center items-center bg-balanpy-800 rounded-full py-2 px-12 mt-10 cursor-pointer hover:bg-balanpy-900 transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-slate-300 ">
-        <img src="/dashboard/paw.svg" alt="huella" />
-        <span className="text-balanpy-50 p-1 font-bold text-xl ml-4">
-          EDITAR INFORMACIÓN
+  return (
+    <>
+      <PetInfo image={pet.image} status={pet.status} />
+      <div className="flex flex-col text-center justify-center items-center col-span-3 h-full">
+        <span className=" text-balanpy-800 font-bold text-[24px] mb-2">
+          ¿Qué quieres hacer ahora?
         </span>
+        <div className="flex flex-row justify-center items-center">
+          <ActivityButton
+            text="Añadir Comida"
+            image="/dashboard/mascotas.svg"
+            hoverImage="/dashboard/mascotas-white.svg"
+            alt_text="añadir comida"
+            modalData={feedActivity}
+          />
+          <ActivityButton
+            text="Añadir Baño"
+            image="/dashboard/bano.svg"
+            hoverImage="/dashboard/bano-white.svg"
+            alt_text="añadir baño"
+            modalData={cleanActivity}
+          />
+          <ActivityButton
+            text="Añadir Cepillado"
+            image="/dashboard/cepillo.svg"
+            hoverImage="/dashboard/cepillo-white.svg"
+            alt_text="añadir cepillado"
+            modalData={brushActivity}
+          />
+          <ActivityButton
+            text="Añadir Paseo"
+            image="/dashboard/paseo.svg"
+            hoverImage="/dashboard/paseo-white.svg"
+            alt_text="añadir paseo"
+            modalData={walkActivity}
+          />
+        </div>
+        <span className="text-balanpy-800 font-bold text-[24px] mb-2 mt-6">
+          ¿Qué información necesitas?
+        </span>
+        <div className="flex flex-row justify-center items-center p-2">
+          <InformationButton text="Visualizar DNI Mascota" />
+          <InformationButton text="Visualizar Pedigree" />
+          <InformationButton text="Visualizar Esterilizado" />
+          <InformationButton text="Visualizar Archivo PPP" />
+        </div>
+        <div className="flex flex-row justify-center items-center mt-1">
+          <InformationButton text="Historial de Alergias" />
+          <InformationButton text="Historial de Vacunas" />
+          <InformationButton text="Historial de Enfermedades" />
+        </div>
+        <div className="flex flex-row align-center justify-center items-center bg-balanpy-800 rounded-full py-2 px-12 mt-10 cursor-pointer hover:bg-balanpy-900 transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-slate-300 ">
+          <img src="/dashboard/paw.svg" alt="huella" />
+          <a href="/dashboard/edit-pet">
+            <span className="text-balanpy-50 p-1 font-bold text-xl ml-4">
+              EDITAR INFORMACIÓN
+            </span>
+          </a>
+        </div>
       </div>
-    </div>
-  </>
+    </>
+  );
 }
 
 export default async function Dashboard() {
