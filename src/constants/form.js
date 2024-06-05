@@ -246,15 +246,20 @@ export const fieldsFormPetsWalk = [
   },
   {
     id: "fieldPetsWalk-02",
-    labelText: "¿Cuanto tiempo paseas cada vez?",
+    labelText: "¿Cuánto tiempo dedicas a pasear?",
     placeholder: "Introduce valor",
   },
   {
     id: "fieldPetsWalk-03",
-    labelText: "¿Cual es el ritmo de paso de tu mascota?",
+    labelText: "¿Cual es el ritmo de paseo?",
     placeholder: "Introduce valor",
   },
-  ]
+  {
+    id: "fieldPetsWalk-04",
+    labelText: "¿A qué hora paseas?",
+    placeholder: "Introduce valor",
+  },
+];
 
   export const fieldsFormPetsUp = [
     {
