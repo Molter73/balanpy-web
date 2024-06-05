@@ -14,7 +14,7 @@ export const Label = ({ htmlFor, text }) => {
 export const LabelSecondary = ({ htmlFor, text }) => {
     return(
         <label
-            className={`${styles.simpleText}font-medium text-black`}
+            className={`${styles.simpleText}`}
             htmlFor={htmlFor}
         >
             {text}
@@ -22,12 +22,12 @@ export const LabelSecondary = ({ htmlFor, text }) => {
     )
 }
 
-export const LabelTertiary = ({text, value}) => {
+export const LabelTertiary = ({ text, value }) => {
+  return (
+    <label className="flex justify-between">
+      <span className="text-balanpy-800 font-semibold text-[16px]">{text}</span>
+      <span className="text-gray-600 text-[16px] ml-2">{value}</span>
+    </label>
+  );
+};
 
-    return(
-        <label className={`${styles.simpleText}font-medium text-black`}>
-            {text} {value}
-        </label>
-
-    )
-}
