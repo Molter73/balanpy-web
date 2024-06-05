@@ -31,23 +31,23 @@ export default function Home() {
 
       <section className={`${styles.paddingX} ${styles.flexCenter} m-5`} >
         <div
-          className={`${styles.boxWidthPets} p-10 mx-auto rounded-2xl w-full bg-white`}
+          className={`${styles.boxWidthPets} p-10 mx-auto rounded-[50px] w-full bg-white`}
         >
-          <div className="flex justify-center">
-            <Container styles={"mr-10"}>
-              <div className="text-center w-40 h-40 mx-auto my-8 border-balanpy-800 border-4 rounded-full">
+          <div className="flex">
+            <Container styles="mr-10 gap-4" justify="justify-center">
+              <div className="text-center w-40 h-40 border-balanpy-800 border-4 rounded-full mb-6">
                 <button className="text-center h-40 text-balanpy-900 text-9xl">+</button>
               </div>
-              <p className="text-balanpy-900 font-bold text-2xl text-center m-4">
+              <p className="text-balanpy-900 font-semibold text-2xl text-center">
                 Sube la imagen de tu mascota
               </p>
-              <p className="text-balanpy-800 font-bold text-center m-8">
+              <p className="text-balanpy-800 font-medium text-center w-2/3">
                 La imagen debe estar en formato .jpg o .png
               </p>
             </Container>
 
-            <Container>
-              <div className="flex flex-row">
+            <Container styles="p-4">
+              <div className="flex flex-row w-full">
                 {fieldsFormPets.slice(0, 3).map((field) => (
                   <div key={field.id} className="flex flex-col w-full px-2 py-4">
                     <Label text={field.labelText} htmlFor={field.id} />
@@ -83,8 +83,8 @@ export default function Home() {
             </Container>
           </div>
           <div className="flex justify-center mt-8 gap-6 ">
-            <ButtonSecondary styles={"text-[16px]"} text={"Cancelar"} href="/register" />
-            <ButtonPrimary styles={"text-[16px]"} text={"Continuar"} href="/addPetStep2"/>
+            <ButtonSecondary styles={"text-[20px]"} text={"Cancelar"} href="/register" />
+            <ButtonPrimary styles={"text-[20px]"} text={"Continuar"} href="/addPetStep2"/>
           </div>
         </div>
       </section>

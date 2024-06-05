@@ -53,7 +53,7 @@ function noPet() {
       <ButtonPrimary
         styles={"mt-10 text-[18px]"}
         text={"Registra tu primera mascota"}
-        href="/login"
+        href="/addPetStep1"
       />
     </div>
   )

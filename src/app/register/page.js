@@ -57,7 +57,7 @@ export default function RegisterUser(){
 
           <div className="flex flex-row justify-center gap-3 w-full mt-2">
             <ButtonSecondary text={"Cancelar"} href="/" styles={"text-[16px]"}/>
-            <ButtonPrimary text={"Regístrate"} href="/addPetStep1" styles={"text-[16px]"}/>
+            <ButtonPrimary text={"Regístrate"} href="/dashboard" styles={"text-[16px]"}/>
           </div>
         </div>
       </main>
