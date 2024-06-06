@@ -34,7 +34,7 @@ export default function Home() {
           className={`${styles.boxWidthPets} p-10 mx-auto rounded-[50px] w-full bg-white`}
         >
           <div className="flex">
-            <Container styles="mr-10 gap-4" justify="justify-center">
+            <Container styles="mr-10 gap-4" justify="justify-center items-center">
               <div className="text-center w-40 h-40 border-balanpy-800 border-4 rounded-full mb-6">
                 <button className="text-center h-40 text-balanpy-900 text-9xl">+</button>
               </div>
