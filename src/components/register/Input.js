@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { slate } from 'tailwindcss/colors';
 
-export const Input = ({ id, placeholder, type = 'text' , styles}) => {
+export const Input = ({ id, placeholder, type = 'text' , styles = 'bg-transparent border-slate-300'}) => {
     return(
             <input
                 id={id}
@@ -12,9 +12,6 @@ export const Input = ({ id, placeholder, type = 'text' , styles}) => {
             />
     );
 }
-Input.defaultProps = {
-    styles : "bg-transparent border-slate-300"
-  }
 
 Input.propTypes = {
     id: PropTypes.string.isRequired,

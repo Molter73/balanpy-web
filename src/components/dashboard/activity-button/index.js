@@ -10,8 +10,6 @@ export default function ActivityButton({ text, image, hoverImage, alt_text, moda
     setShowModal(!showModal);
   };
 
-  console.log("ActivityButton", modalData)
-
   return (
     <div className="flex flex-col items-center justify-center align-center p-4">
       <div className="flex flex-col items-center justify-center align-center p-4">

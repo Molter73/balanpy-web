@@ -10,6 +10,12 @@ import Check from "@/components/pets/check";
 import Graph from "@/components/pets/Graph";
 
 export default function Home() {
+  const fileUploads = [
+    "DNI Mascota",
+    "Archivo Esterilizacion",
+    "Archivo Pedigree",
+    "Archivo PPP",
+  ]
   return (
     <main className="justify-items-center grid grid-cols-1 py-20 min-h-screen bg-gradient-to-b from-balanpy-500 from-20% via-balanpy-700 via-65% to-balanpy-900 to-100%">
       <div className="justify-center">
@@ -85,10 +91,7 @@ export default function Home() {
                   Sube los siguientes archivos
                 </p>
               </div>
-              <FileUp text={"DNI Mascota"}></FileUp>
-              <FileUp text={"Archivo Esterilizacion"}></FileUp>
-              <FileUp text={"Archivo Pedigree"}></FileUp>
-              <FileUp text={"Archivo PPP"}></FileUp>
+              { fileUploads.map((text, i) => <FileUp key={i} text={text} />) }
             </Container>
           </div>
           <div className="flex justify-center mt-8 gap-6 ">

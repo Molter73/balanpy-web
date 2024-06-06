@@ -11,31 +11,31 @@ import {styles} from "./style";
 export default function Home() {
   return (
     <div className="bg-white w-full overflow-hidden">
-      <div className={`${styles.paddingX} ${styles.flexCenter} bg-balanpy`}>
+      <div key="topbar" className={`${styles.paddingX} ${styles.flexCenter} bg-balanpy`}>
         <div className={styles.boxWidth}>
           <Topbar />
         </div>
       </div>
 
-      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+      <div key="navbar" className={`${styles.paddingX} ${styles.flexCenter}`}>
         <div className={styles.boxWidth}>
           <Navbar />
         </div>
       </div>
 
-      <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+      <div key="hero" className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
         <div className={styles.boxWidth}>
           <Hero />
         </div>
       </div>
 
-      <div className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
+      <div key="stats" className={`bg-primary ${styles.paddingX} ${styles.flexStart}`}>
         <div className={styles.boxWidth}>
           <Stats />
         </div>
       </div>
 
-      <div className={`bg-clients-gradient`}>
+      <div key="clients" className={`bg-clients-gradient`}>
         <div className={`w-full`}>
           <Clients />
         </div>
@@ -46,6 +46,7 @@ export default function Home() {
       </div>
 
       <div
+        key="services"
         className={`bg-white ${styles.paddingX} ${styles.paddingY} ${styles.flexStart}`}
       >
         <div className={styles.boxWidth}>
@@ -54,6 +55,7 @@ export default function Home() {
       </div>
 
       <div
+        key="whyus"
         className={`bg-primary ${styles.paddingX} ${styles.paddingY} ${styles.flexStart}`}
       >
         <div className={styles.boxWidth}>
@@ -61,6 +63,7 @@ export default function Home() {
         </div>
       </div>
       <div
+        key="testimonials"
         className={`bg-white ${styles.paddingX} ${styles.paddingY} ${styles.flexStart}`}
       >
         <div className={styles.boxWidth}>
@@ -68,6 +71,7 @@ export default function Home() {
         </div>
       </div>
       <div
+        key="footer"
         className={`bg-balanpy-900 ${styles.paddingX} ${styles.paddingY} ${styles.flexStart}`}
       >
         <div className={styles.boxWidth}>

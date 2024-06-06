@@ -1,4 +1,4 @@
-export default function Steps({ index, styles }) {
+export default function Steps({ index, styles = "bg-white text-balanpy-800" }) {
   return (
     <div className={`group relative flex justify-center p-2 border-2 border-white rounded-full ${styles}`}>
       <svg width="2em" height="2em"></svg>
@@ -7,8 +7,4 @@ export default function Steps({ index, styles }) {
       </span>
     </div>
   );
-}
-
-Steps.defaultProps = {
-  styles : "bg-white text-balanpy-800"
 }
