@@ -6,13 +6,15 @@ export default function Sidebar({children}) {
     return (
       <div>
         <div className="fixed flex h-screen w-full max-w-[20rem] flex-col bg-white bg-clip-border justify-around align-center items-center shadow-lg">
-          <div className="flex flex-col p-4 mb-2 items-center">
-            <img src="/balanpy.svg" alt="Logo Balanpy" className="w-[110px] h-[110px]" />
-            <h5 className="block text-balanpy text-[36px] font-bold">
-              Balanpy
-            </h5>
-            <div className="w-full h-[2px] bg-dimGray mt-4"></div>
-          </div>
+          <a href="/">
+            <div className="flex flex-col p-4 mb-2 items-center">
+              <img src="/balanpy.svg" alt="Logo Balanpy" className="w-[110px] h-[110px]" />
+              <h5 className="block text-balanpy text-[36px] font-bold">
+                Balanpy
+              </h5>
+              <div className="w-full h-[2px] bg-dimGray mt-4"></div>
+            </div>
+          </a>
           <nav
             aria-label="Sidebar"
             className="flex min-w-[240px] flex-col gap-6 p-2 text-balanpy-700 text-[20px] font-medium"

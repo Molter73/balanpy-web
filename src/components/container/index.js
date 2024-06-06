@@ -1,7 +1,9 @@
-export default function Container({styles, children, bg_color = 'bg-white'}) {
-    return (
-        <div className={`flex flex-col align-center justify-between items-between border-[3px] border-balanpy-800 rounded-[25px] ${styles} ${bg_color}`} >
-            {children}
-        </div>
-    )
+export default function Container({ styles, children, bg_color = 'bg-white', justify = 'justify-between' }) {
+  return (
+    <div
+      className={`flex flex-col align-center items-between border-[3px] border-balanpy-800 rounded-[25px] ${justify} ${styles} ${bg_color}`}
+    >
+      {children}
+    </div>
+  );
 }

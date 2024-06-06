@@ -74,14 +74,14 @@ export const fieldsFormLogin = [
 
     {
         id: 'username',
-        labelText: 'Username',
-        placeholder: 'Enter your username'
+        labelText: 'Usuario',
+        placeholder: 'Introduce tu nombre de usuario'
 
     },
     {
         id: 'password',
-        labelText: 'Password',
-        placeholder: 'Enter your password'
+        labelText: 'Contraseña',
+        placeholder: 'Introduce tu contraseña'
     }
 ]
 
@@ -175,18 +175,23 @@ export const fieldsFormPetsRow = [
 export const fieldsFormPetsEat = [
   {
     id: "fieldPetsEat-01",
-    labelText: "¿Cuantas veces come tu mascota?",
+    labelText: "¿Cuántas veces come?",
     placeholder: "Introduce cantidad",
   },
   {
     id: "fieldPetsEat-02",
-    labelText: "¿Que cantidad come cada vez?",
+    labelText: "¿Qué cantidad come cada vez?",
     placeholder: "Introduce cantidad",
   },
   {
     id: "fieldPetsEat-03",
-    labelText: "¿Cuanto pesa tu mascota?",
-    placeholder: "Introduce peso",
+    labelText: "¿Cuánto pesa?",
+    placeholder: "Introduce el peso de tu mascota",
+  },
+  {
+    id: "fieldPetsEat-03",
+    labelText: "¿Qué tipo de pienso come?",
+    placeholder: "Introduce el tipo de pienso",
   },
   {
     id: "fieldPetsEat-04",
@@ -198,32 +203,27 @@ export const fieldsFormPetsEat = [
     labelText: "2ª Comida",
     placeholder: "Introduce valor",
   },
-  {
-    id: "fieldPetsEat-06",
-    labelText: "3ª Comida",
-    placeholder: "Introduce valor",
-  },
 ];
 
 export const fieldsFormPetsHig = [
 {
   id: "fieldPetsHig-01",
-  labelText: "¿Cada cuanto bañas a tu mascota?",
+  labelText: "¿Cada cuánto la bañas?",
   placeholder: "Introduce valor",
 },
 {
   id: "fieldPetsHig-02",
-  labelText: "¿Cada cuanto la cepillas?",
+  labelText: "¿Cada cuánto la cepillas?",
   placeholder: "Introduce valor",
 },
 {
   id: "fieldPetsHig-03",
-  labelText: "¿Cada cuanto la desparacitas?",
+  labelText: "¿Cada cuánto la desparasitas?",
   placeholder: "Introduce valor",
 },
 {
   id: "fieldPetsHig-04",
-  labelText: "Fecha del ultimo baño de tu mascota",
+  labelText: "Fecha del ultimo baño",
   placeholder: "Introduce valor",
 },
 {
@@ -246,15 +246,20 @@ export const fieldsFormPetsWalk = [
   },
   {
     id: "fieldPetsWalk-02",
-    labelText: "¿Cuanto tiempo paseas cada vez?",
+    labelText: "¿Cuánto tiempo dedicas a pasear?",
     placeholder: "Introduce valor",
   },
   {
     id: "fieldPetsWalk-03",
-    labelText: "¿Cual es el ritmo de paso de tu mascota?",
+    labelText: "¿Cual es el ritmo de paseo?",
     placeholder: "Introduce valor",
   },
-  ]
+  {
+    id: "fieldPetsWalk-04",
+    labelText: "¿A qué hora paseas?",
+    placeholder: "Introduce valor",
+  },
+];
 
   export const fieldsFormPetsUp = [
     {
