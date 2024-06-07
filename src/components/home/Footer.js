@@ -20,7 +20,7 @@ export default function Footer() {
           <div className="flex-[1.5] w-full flex flex-row justify-between flex-wrap md:mt-5 mt-10">
             {footerLinks.map((footerLinks) => (
               <div
-                key={footerLinks.key}
+                key={footerLinks.title}
                 className="flex flex-col ss:my-0 my-4 min-w-[150px]"
               >
                 <h4 className={`${styles.heading4} text-white`}>
@@ -54,7 +54,7 @@ export default function Footer() {
                 key={social.id}
                 src={social.icon}
                 alt={social.name}
-                className={`w-[40px] h-[40px] object-contain cursor-pointer ${index !== socialMedia.length - 1 ? "mr-6" : "mr-0"}`} 
+                className={`w-[40px] h-[40px] object-contain cursor-pointer ${index !== socialMedia.length - 1 ? "mr-6" : "mr-0"}`}
               />
             ))}
           </div>

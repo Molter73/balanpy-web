@@ -5,7 +5,7 @@ export default function FileUp({text}) {
           <div className="relative w-full mx-auto">
             <input id="file-upload" type="file" className="hidden" />
             <label
-              for="file-upload"
+              htmlFor="file-upload"
               className="text-lg font-semibold block cursor-pointer w-full py-2 px-4 border-[3px] border-white rounded-lg bg-white text-balanpy-800 hover:bg-balanpy-800 hover:border-white hover:border-[3px] hover:text-white transition-all duration-300 ease-in-out "
             >
               {text}
@@ -13,7 +13,7 @@ export default function FileUp({text}) {
           </div>
           <label
             className="block text-white mb-4 text-sm font-medium mt-3"
-            for="file-upload"
+            htmlFor="file-upload"
           >
             Sube el archivo en formato .pdf
           </label>

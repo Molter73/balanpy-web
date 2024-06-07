@@ -13,18 +13,10 @@ const Button = ({ styles, text, href }) => {
   )
 }
 
-export const ButtonPrimary = ({ styles, text, href }) => {
+export const ButtonPrimary = ({ styles = "text-[14px]", text, href }) => {
   return <Button text={text} href={href} styles={`${styles} text-primary bg-balanpy hover:bg-white hover:text-balanpy`} />
 }
 
-export const ButtonSecondary = ({ styles, text, href }) => {
+export const ButtonSecondary = ({ styles = "text-[14px]", text, href }) => {
   return <Button text={text} href={href} styles={`${styles} text-balanpy bg-white hover:bg-balanpy hover:text-primary`} />
-}
-
-ButtonSecondary.defaultProps = {
-  styles: "text-[14px]",
-}
-
-ButtonPrimary.defaultProps = {
-  styles: "text-[14px]",
 }

@@ -189,17 +189,17 @@ export const fieldsFormPetsEat = [
     placeholder: "Introduce el peso de tu mascota",
   },
   {
-    id: "fieldPetsEat-03",
+    id: "fieldPetsEat-04",
     labelText: "¿Qué tipo de pienso come?",
     placeholder: "Introduce el tipo de pienso",
   },
   {
-    id: "fieldPetsEat-04",
+    id: "fieldPetsEat-05",
     labelText: "1ª Comida",
     placeholder: "Introduce valor",
   },
   {
-    id: "fieldPetsEat-05",
+    id: "fieldPetsEat-06",
     labelText: "2ª Comida",
     placeholder: "Introduce valor",
   },
